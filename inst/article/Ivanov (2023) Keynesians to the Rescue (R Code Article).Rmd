@@ -1,0 +1,1892 @@
+---
+title: "Ivanov (2023) Keynesians to the Rescue: Unprecedented Policy Responses Towards Unprecedented Macroeconomic Shocks (Evidence from Three Natural Experiments)"
+author: "Lyuben Ivanov"
+date: "06/11/2023"
+output: pdf_document
+documentclass: article
+geometry: margin = 1.3 in
+urlcolor: gray
+---
+
+### Helper Functions and Setup
+The code below loads useful libraries and sets key settings 
+throughout the analysis. 
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = TRUE, results = FALSE, eval = TRUE)
+options(digits = 2, scipen = 999)
+options(tikzMetricPackages = 
+          c("\\usepackage[utf8]{inputenc}",
+            "\\usepackage[T1, T2A]{fontenc}",
+            "\\usetikzlibrary{calc}",
+            "\\usepackage[bulgarian, english]{babel}")
+        )                         # ensuring that tikzDevice works with cyrillic
+library(dplyr)                    # some useful functions for data manipulation
+library(magrittr)                 # piping with placeholder
+library(tikzDevice)               # graphical output to a .tex file
+library(stargazer)                # output to LaTeX table
+library(BatchGetSymbols)          # getting data from Yahoo Finance!
+library(readxl)                   # importing Excel data
+library(fredr)                    # access to the St. Louis FRED database
+fredr_set_key(                    # API key
+  "317cdeec1974fa77e91f61f3fda373db"
+  )   
+
+```
+
+A function for plotting time series the Tufte way (with minimal ink)
+
+```{r index plot function}
+line_plot <- function (                  # add index plot function
+  line_1_data,                           # require data for line 1
+  line_2_data,                           # require data for line 2
+  line_3_data,                           # require data for line 3
+  start_date,                            # require start of period
+  end_date,                              # require end of period,
+  y_ticks = 100,                         # require tick distance for y-axis
+  labels_margin = 0,                     # require space for line labels
+  y_axis = TRUE,                         # ask for y_axis
+  y_lim = c(-100, 100),                  # set default value of y_axis limits
+  mar_values = c(2, 3, 2, 1)             # set default value of margins
+  ) {
+
+line_1_data <-
+  line_1_data |>                         # load line 1 data
+  subset(date >= start_date) |>          # subset rows by date
+  subset(date <= end_date) |>            # subset rows by date
+  transform(value = value/value[1]) |>   # normalize values
+  transform(value = value*100 - 100)     # make index
+    
+line_2_data <-
+  line_2_data |>                         # load line 2 data
+  subset(date >= start_date) |>          # subset rows by date
+  subset(date <= end_date) |>            # subset rows by date
+  transform(value = value/value[1]) |>   # normalize values
+  transform(value = value*100 - 100)     # make index
+
+line_3_data <-
+  line_3_data |>                         # load line 3 data
+  subset(date >= start_date) |>          # subset rows by date
+  subset(date <= end_date) |>            # subset rows by date
+  transform(value = value/value[1]) |>   # normalize values
+  transform(value = value*100 - 100)     # make index
+
+par(                                # set plot options
+  mar = mar_values,                 # set margins (bottom, left, top, right)
+  cex = 0.9,                        # set text magnification
+  family="serif"                    # specify font
+   )
+
+plot(                               # start new plot
+  line_1_data,                      # provide data for first line
+  axes = F,                         # remove axes
+  xlab = "", 		  					        # blank space for x-axis label
+  ylab = "", 		              		  # blank space for y-axis label
+  type = "l",                       # specify type of plot
+  lwd = 1,                          # specify line width
+  xlim =                            # specify x-axis limit
+  c(as.Date(start_date), as.Date(end_date) + labels_margin),
+  ylim = y_lim
+  
+)
+
+lines(                              # add base line
+  x = c(start_date, end_date) |>    # x-axis coordinates
+    as.Date(),                      # in date format
+  y = c(0, 0),                      # y-axis coordinates
+  lty = "dotted"                    # line type
+  )
+
+lines(                              # add second line
+  line_2_data,                      # provide data for second line
+  lty = "dashed"                    # specify type of second line
+  )
+
+lines(                              # add third line
+  line_3_data,                      # provide data for third line
+  lty = "twodash"                   # specify type of third line
+  )
+
+axis(						                            # add x-axis to plot
+  side = 1, 				                        # axis should be drawn below
+  at = c(start_date, end_date) |>           # specify labels locations
+    as.Date(),	                            # in date format
+  labels = c(start_date, end_date) |>       # specify labels text
+    as.Date() |>                            # in date format
+    format("%Y") |>                         # specify date format
+    paste("г.")
+)	
+
+if (y_axis == TRUE) {
+  
+axis(						                            # add y-axis to plot
+  side = 2, 				                        # axis should be drawn on left side
+  at = seq(                                 # specify labels locations
+    from = y_lim[1],                        # first location
+    to = y_lim[2],                          # last location
+    by = y_ticks),	                        # distance between labels      
+  labels = seq(                             # specify labels' text
+    from = y_lim[1],                        # first label
+    to = y_lim[2],                          # last label
+    by = y_ticks                            # distance between first and last
+    ) |>
+    paste0("\\%"),	                       
+  las = 2,                        	      	# specify labels orientation
+  tick = F				                          # remove ticks
+)
+  
+}
+
+line_1_ending_value <-                   # compute y-axis coordinate for label 1
+  line_1_data |>                         # load line 1 data
+  use_series(value) |>                   # use value
+  last()                                 # use last value
+
+line_2_ending_value <-                   # compute y-axis coordinate for label 2
+  line_2_data |>                         # load line 2 data
+  use_series(value) |>                   # use value
+  last()                                 # use last value
+
+line_3_ending_value <-                   # compute y-axis coordinate for label 3
+  line_3_data |>                         # load line 2 data
+  use_series(value) |>                   # use value
+  last()                                 # use last value
+
+labels <-                               # labels for the three lines 
+  c(
+    "БГ", "ЕЗ", "САЩ"
+    )             
+         
+
+text(                                               # add line labels
+  x = as.Date(end_date) |>                          # recycle x-axis coordinates 
+    add(                                            # add space
+      (as.Date(end_date) - as.Date(start_date)) |> 
+      multiply_by(0.01)                             # make space proportional
+       ),                                           # to x-axis distance
+  y = c(
+    line_1_ending_value, 
+    line_2_ending_value, 
+    line_3_ending_value
+    ),                                              # specify y-axis coordinates
+  labels = labels,                                  # specify labels  
+  cex = 0.9,                                        # expand characters by 0.9
+  adj = c(0,0)                                      # label justification (left)
+  )
+}
+
+```
+
+Another function for plotting time series (for a more limited number of data
+points)
+
+```{r barplot function}
+bar_plot <- function (                  # add barplot function
+  bar_1_data,                           # require data for bar 1
+  bar_2_data,                           # require data for bar 2
+  bar_3_data,                           # require data for bar 3
+  y_ticks = 1,                          # require tick distance for y-axis
+  y_axis = TRUE,                        # ask for y_axis
+  y_lim = c(-100, 100),                 # set default value of y_axis limits
+  mar_values = c(2, 3, 2, 1)            # set default value of margins
+  ) {
+  
+  par(mar =                           # set margins around plot 
+     mar_values,                      # (bottom, left, top, right)
+     cex = 0.9                        # plotting text expansion
+     )
+  
+  data.frame(                     # data frame for barplot
+    bar_1_data, 
+    bar_2_data,
+    bar_3_data
+    ) |>
+  as.matrix.data.frame() |>       # convert to matrix
+  t() |>                          # transpose matrix
+  barplot( 
+        beside = T,               # bars are next to each other
+        yaxt = "n",               # remove y-axis
+        ylab = "", 		  					# blank space for the y-axis label,
+        xlab = "", 		  					# blank space for the x-axis label,
+        border = F, 					    # remove borders
+        col = gray.colors(3),	 	  # specify colors
+        ylim = y_lim
+        )  
+  
+  abline(					# add straight line for x-axis
+  h = 0,		    	# specify y-value for horizontal line
+  col = "black",	# specify color of horizontal line
+  lwd = 1		    	# specify horizontal line's width
+  ) 
+  
+if (y_axis == TRUE) {
+  
+axis(						                            # add y-axis to plot
+  side = 2, 				                        # axis should be drawn on left side
+  at = seq(                                 # specify labels locations
+    from = y_lim[1],                        # first location
+    to = y_lim[2],                          # last location
+    by = y_ticks	                          # distance between labels      
+    ),
+  labels = seq(                             # specify labels' text
+    from = y_lim[1],                        # first label
+    to = y_lim[2],                          # last label
+    by = y_ticks	                          # distance between first and last
+    ) |> 
+    paste0("\\%"),                          # add LaTeX code for %
+  las = 2,                        	      	# horizontal labels
+  tick = F				                          # remove ticks
+)
+  
+}
+  
+  abline(				    	# add straight lines through current plot
+  h = seq(            # specify y-values for horizontal lines
+    from = y_lim[1],  # first line
+    to = y_lim[2],    # last line
+    by = y_ticks	    # distance between lines 
+    ),	
+  col = "white",	  	# specify color of horizontal lines
+  lwd = 1		        	# specify horizontal lines width
+  )
+  
+}
+```
+
+
+The next function creates a string of years and quarters and is useful for 
+naming quarterly data
+```{r quarter string function}
+quarter_str <- function(x) {
+  paste(
+    c("Q1", "Q2", "Q3", "Q4"),      # set a string with quarters for recycling
+    mapply(rep, x, 4)               # repeat the years provided as argument
+    )
+}
+```
+
+The function below combines two separate functions that are needed to get the 
+complete path to a file with data that needs to be imported in R
+
+```{r file path function}
+fpath <- function(x) {
+  getwd() |>             # get current directory
+  paste0("/", x)         # add file name
+}
+```
+
+# 1. Index Performances
+### Bulgarian Data
+
+Data for the main index of the Bulgarian Stock Exchange.
+https://www.investor.bg/indexes/index/235/17/
+
+```{r load SOFIX data, eval=FALSE}
+SOFIX_data <-                                      # load SOFIX data
+  getwd() |>                                       # get current directory
+  fpath("SOFIX_up_to_2021-12-31.txt") |>           # add file name
+  read.table(                                      # call read.table
+             header = F,                           # files have no header
+             sep = "\t",                           # separator is tab
+             dec = ",",                            # decimal point is comma
+             colClasses = c("character",           # first column is character
+                            "numeric",             # second column is numeric
+                            "NULL",                # skip next column
+                            "NULL"),               # skip last column
+             col.names = c("date",                 # name of first column
+                           "value",                # name of column 2
+                           "misc",                 # name of column 3
+                           "misc")                 # name of column 4
+            ) |>
+  transform(date = as.Date(date)) |>               # specify data format
+  subset(date <= "2021-12-31") |>                  # subset rows by date
+  arrange(date)                                    # sort dataframe by date
+```
+
+### Euroarea Data
+
+Data for EURO STOXX 50, an index representative for the stocks in the Eurozone 
+(https://www.stoxx.com/index-details?symbol=SX5E), can be
+downloaded from Google Finance through the GOOGLEFINANCE function in the free
+Google Sheets app. Below are the arguments supplied to the function:
+GOOGLEFINANCE(
+"INDEXSTOXX:SX5E","close", DATE(2000,10,17), DATE(2021,12,31), "daily"
+)
+The link to the sheet is:
+https://docs.google.com/spreadsheets/
+d/1eDYQ46rZhgut0BcaF415wdPWLRQb9pUuWh7PFkl1QFM/edit?usp=sharing
+```{r load EURO STOXX 50 data, eval=FALSE}
+EUROSTOXX50_data <-                                # get EURO STOXX 50 data
+  getwd() |>                                       # get current directory
+  paste0("/","EURO STOXX 50 Index.csv") |>         # add file name
+  read.table(
+             header = T,                           # file has header
+             sep = " ",                            # separator is white space
+             dec = ".",                            # decimal point is dot
+             colClasses = c("character",           # first column is character
+                            "numeric"),            # second column is numeric
+             col.names = c("date",                 # name of first column
+                           "value")                # name of second column
+            ) |>
+  transform(date =                                 # convert first column
+              as.Date(date,format = "%d/%m/%Y")    # to date format
+            ) 
+```
+
+### US Data
+Data for the S&P 500 index for the 2000-2021 period can be 
+conveniently imported from Yahoo Finance with the package ``BatchGetSymbols`` 
+by Marcelo Perlin. 
+
+```{r load S&P 500 data, eval=FALSE}
+SandP_data <-                                               # new dataframe
+  BatchGetSymbols(                                          # call function
+  tickers = "^GSPC",                                        # get S&P 500 data
+  first.date = as.Date("2000-10-17"),                       # starting date
+  last.date = as.Date("2021-12-31")                         # ending date
+  ) |>
+  use_series(df.tickers) |>                                 # use tickers list
+  transform(date = ref.date, value = price.close) |>        # rename columns
+  subset(select = c("date", "value"))                       # use date and value
+
+citation(                                               # use R's citation tool
+  package = "BatchGetSymbols"                           # specify package
+) |>
+  toBibtex()                                            # extract BibTex code
+
+```
+
+
+## Figure 1. Index Performances After the The Great Financial Crisis and the Covid-19 Pandemic
+
+The figure below shows the relative performance of SOFIX and S&P 500 in the 
+aftermath of the great financial crisis and the COVID-19 pandemic. Both indices 
+have been recalculated to start at 0 at the beginning of the periods 
+(when S&P 500 was at its pre-pandemic maximum). The troughs and the recoveries 
+are highlighted.
+
+```{r draw figure 1 index performances}
+tikz(                                            # start tikzDevice
+  file = fpath("figure_1.tex"),                  # output path and file name
+  width = 5.5, height = 3.5                      # figure size 
+)
+
+par(
+  mfrow = c(1, 2)
+)
+
+line_plot(
+  line_1_data = SOFIX_data,                      # load data  
+  line_2_data = EUROSTOXX50_data,                # load data  
+  line_3_data = SandP_data,                      # load data  
+  start_date = "2007-10-09",                     # specify start of period
+  end_date = "2015-05-21",                       # specify end of period
+  y_ticks = 20,                                  # specify tick distance
+  labels_margin = 400,                           # specify distance for labels
+  y_axis = TRUE,                                 # produce y_axis
+  y_lim = c(-100, 50),                           # set limits for the y_axis
+  mar_values = c(2, 3, 2, 0)    
+  )
+
+title(
+  main = "А. Световна финансова криза",          # set plot title
+  font.main = 1,                                 # set title font to plain
+  cex.main = 0.9                                 # expand characters by 0.9
+)
+
+line_plot(
+  line_1_data = SOFIX_data,                      # load data  
+  line_2_data = EUROSTOXX50_data,                # load data  
+  line_3_data = SandP_data,                      # load data  
+  start_date = "2020-02-19",                     # specify start of period
+  end_date = "2021-12-31",                       # specify end of period
+  y_ticks = 10,                                  # specify tick distance
+  labels_margin = 70,                            # specify distance for labels
+  y_axis = FALSE,                                # do not produce y_axis
+  y_lim = c(-100, 50),                           # set limits for the y_axis
+  mar_values = c(2, 0, 2, 0)                              
+  )
+
+title(
+  main = "Б. Пандемия от Ковид-19",               # set plot title
+  font.main = 1,                                  # set title font to plain
+  cex.main = 0.9                                  # expand characters by 0.9
+)
+
+dev.off()
+
+```
+
+## Table 1. Index Performance Summary 
+
+Let's create a LaTeX table with the important values. 
+
+First we do calculations about the great financial crisis
+
+```{r table 1 data gfc}
+min_value_SOFIX_gfc <-                         # determine SOFIX minimum
+  SOFIX_data |>                                # load SOFIX data
+  select(date >= "2007-10-09") |>              # subset rows by date
+  subset(date <= "2015-05-21") |>              # subset rows by date
+  subset(select = "value") |>                  # use value
+  min()                                        # find minimum value
+
+date_of_bottom_SOFIX_gfc <-                    # determine date of SOFIX bottom
+  SOFIX_data |>                                # load SOFIX data
+  subset(value == min_value_SOFIX_gfc) |>      # select row
+  subset(select = "date")                      # use date
+
+starting_value_SOFIX_gfc <-                    # determine SOFIX starting value
+  SOFIX_data |>                                # load SOFIX data
+  subset(date == "2007-10-09") |>              # subset rows by date
+  subset(select = "value") |>                  # use value
+  as.numeric()                                 # remove row number
+
+ending_value_SOFIX_gfc <-                      # determine SOFIX ending value
+  SOFIX_data |>                                # load SOFIX data
+  subset(date == "2015-05-21") |>              # subset rows by date
+  subset(select = "value") |>                  # use value
+  as.numeric()                                 # remove row number
+  
+pct_drop_SOFIX_gfc <-                         # determine SOFIX percentage drop
+  min_value_SOFIX_gfc |>                      # use SOFIX minimum value
+  divide_by(starting_value_SOFIX_gfc) |>      # divide by SOFIX starting value
+  subtract(1) |>                              # compute relative change
+  multiply_by(100) |>                         # convert to percentage
+  as.numeric()                                # remove row number
+
+pct_increase_SOFIX_gfc <-                     # determine increase in SOFIX 
+  ending_value_SOFIX_gfc |>                   # use SOFIX ending value
+  divide_by(min_value_SOFIX_gfc) |>           # divide by SOFIX minimum value
+  subtract(1) |>                              # compute relative change
+  multiply_by(100) |>                         # convert to percentage
+  as.numeric()                                # remove row number
+
+
+### calculate EURO STOXX 50 data
+
+min_value_EUROSTOXX50_gfc <-                   # determine minimum
+  EUROSTOXX50_data |>                          # load data
+  subset(date >= "2007-10-09") |>              # subset rows by date
+  subset(date <= "2015-05-21") |>              # subset rows by date
+  subset(select = "value") |>                  # use value
+  min()                                        # find minimum value
+
+date_of_bottom_EUROSTOXX50_gfc <-                 # determine date of bottom
+  EUROSTOXX50_data |>                             # load data
+  subset(value == min_value_EUROSTOXX50_gfc) |>   # select row
+  subset(select = "date")                         # use date
+
+starting_value_EUROSTOXX50_gfc <-              # determine starting value
+  EUROSTOXX50_data |>                          # load data
+  subset(date == "2007-10-09") |>              # subset rows by date
+  subset(select = "value") |>                  # use value
+  as.numeric()                                 # remove row number
+
+ending_value_EUROSTOXX50_gfc <-                # determine ending value
+  EUROSTOXX50_data |>                          # load data
+  subset(date == "2015-05-21") |>              # subset rows by date
+  subset(select = "value") |>                  # use value
+  as.numeric()                                 # remove row number
+  
+pct_drop_EUROSTOXX50_gfc <-                   # determine percentage drop
+  min_value_EUROSTOXX50_gfc |>                # use minimum value
+  divide_by(starting_value_EUROSTOXX50_gfc) |># divide by starting value
+  subtract(1) |>                              # compute relative change
+  multiply_by(100) |>                         # convert to percentage
+  as.numeric()                                # remove row number
+
+pct_increase_EUROSTOXX50_gfc <-               # determine percentage increase 
+  ending_value_EUROSTOXX50_gfc |>             # use ending value
+  divide_by(min_value_EUROSTOXX50_gfc) |>     # divide by minimum value
+  subtract(1) |>                              # compute relative change
+  multiply_by(100) |>                         # convert to percentage
+  as.numeric()                                # remove row number
+
+### calculate S&P 500 data
+
+min_value_SandP_gfc <-                         # determine minimum
+  SandP_data |>                                # load data
+  subset(date >= "2007-10-09") |>              # subset rows by date
+  subset(date <= "2015-05-21") |>              # subset rows by date
+  subset(select = "value") |>                  # use value
+  min()                                        # find minimum value
+
+date_of_bottom_SandP_gfc <-                    # determine date of bottom
+  SandP_data |>                                # load data
+  subset(value == min_value_SandP_gfc) |>      # select row
+  subset(select = "date")                      # use date
+
+starting_value_SandP_gfc <-                    # determine starting value
+  SandP_data |>                                # load data
+  subset(date == "2007-10-09") |>              # subset rows by date
+  subset(select = "value") |>                  # use value
+  as.numeric()                                 # remove row number
+
+date_of_recovery_SandP_gfc <-                  # determine recovery date
+  SandP_data |>                                # load data
+  subset(date >= "2007-10-09") |>              # subset rows by date
+  subset(date <= "2015-05-21") |>              # subset rows by date
+  subset(value > starting_value_SandP_gfc) |>  
+  extract(1, ) |>                              # extract appropriate row
+  subset(select = "date")                      # use the date
+
+ending_value_SandP_gfc <-                      # determine ending value
+  SandP_data |>                                # load data
+  subset(date == "2015-05-21") |>              # subset rows by date
+  subset(select = "value") |>                  # use value
+  as.numeric()                                 # remove row number
+  
+pct_drop_SandP_gfc <-                         # determine percentage drop
+  min_value_SandP_gfc |>                      # use minimum value
+  divide_by(starting_value_SandP_gfc) |>      # divide by starting value
+  subtract(1) |>                              # compute relative change
+  multiply_by(100) |>                         # convert to percentage
+  as.numeric()                                # remove row number
+
+pct_increase_SandP_gfc <-                     # determine percentage increase 
+  ending_value_SandP_gfc |>                   # use ending value
+  divide_by(min_value_SandP_gfc) |>           # divide by minimum value
+  subtract(1) |>                              # compute relative change
+  multiply_by(100) |>                         # convert to percentage
+  as.numeric()                                # remove row number
+
+recovery_speed_SandP_gfc <-                   # determine recovery time in days
+  date_of_recovery_SandP_gfc |>               # load the date of recovery
+  subtract(date_of_bottom_SandP_gfc) |>       # subtract the date of bottom
+  as.numeric()                                # remove row number 
+                           
+```
+
+Then we do calculations about the pandemic 
+
+```{r table 1 data pandemic}
+min_value_SOFIX_pandemic <-                    # determine SOFIX minimum
+  SOFIX_data |>                                # load SOFIX data
+  subset(date >= "2020-02-19") |>              # subset rows by date
+  subset(select = "value") |>                  # use value
+  min()                                        # find minimum value
+
+date_of_bottom_SOFIX_pandemic <-               # determine date of SOFIX bottom
+  SOFIX_data |>                                # load SOFIX data
+  subset(value == min_value_SOFIX_pandemic) |> # select row
+  subset(select = "date")                      # use date
+
+starting_value_SOFIX_pandemic <-               # determine SOFIX starting value
+  SOFIX_data |>                                # load SOFIX data
+  subset(date == "2020-02-19") |>              # select row by date
+  subset(select = "value") |>                  # use value
+  as.numeric()                                 # remove row number
+
+date_of_recovery_SOFIX_pandemic <-             # determine when SOFIX recovers
+  SOFIX_data |>                                # load SOFIX data
+  subset(date >= "2020-02-19") |>              # subset rows by date
+  subset(value > starting_value_SOFIX_pandemic) |>  
+  extract(4, ) |>                              # extract appropriate row
+  subset(select = "date")                      # use the date
+
+ending_value_SOFIX_pandemic <-                 # determine SOFIX ending value
+  SOFIX_data |>                                # load SOFIX data
+  subset(date == "2021-12-30") |>              # select row by date
+  subset(select = "value") |>                  # use value
+  as.numeric()                                 # remove row number
+  
+pct_drop_SOFIX_pandemic <-                    # determine SOFIX percentage drop
+  min_value_SOFIX_pandemic |>                 # use SOFIX minimum value
+  divide_by(starting_value_SOFIX_pandemic) |> # divide by SOFIX starting value
+  subtract(1) |>                              # compute relative change
+  multiply_by(100) |>                         # convert to percentage
+  as.numeric() |>                             # remove row number
+  set_names("SOFIX change (%)")               # name the value
+
+pct_increase_SOFIX_pandemic <-                # determine increase in SOFIX 
+  ending_value_SOFIX_pandemic |>              # use SOFIX ending value
+  divide_by(min_value_SOFIX_pandemic) |>      # divide by SOFIX minimum value
+  subtract(1) |>                              # compute relative change
+  multiply_by(100) |>                         # convert to percentage
+  as.numeric()                                # remove row number
+
+recovery_speed_SOFIX_pandemic <-              # determine recovery time in days
+  date_of_recovery_SOFIX_pandemic |>          # load the date of recovery
+  subtract(date_of_bottom_SOFIX_pandemic) |>  # subtract the date of bottom
+  as.numeric()                                # remove row number 
+  
+min_value_EUROSTOXX50_pandemic <-              # determine EUROSTOXX50 minimum
+  EUROSTOXX50_data |>                          # load EUROSTOXX50 data
+  subset(date >= "2020-02-19") |>              # subset rows by date
+  select("value") |>                           # use value
+  min()                                        # find minimum value
+ 
+date_of_bottom_EUROSTOXX50_pandemic <-         # determine date of bottom
+  EUROSTOXX50_data |>                                  # load EUROSTOXX50 data
+  subset(value == min_value_EUROSTOXX50_pandemic) |>   # select row
+  subset(select = "date")                              # use date
+
+starting_value_EUROSTOXX50_pandemic <-         # determine starting value
+  EUROSTOXX50_data |>                          # load EUROSTOXX50 data
+  subset(date == "2020-02-19") |>              # select row by date
+  subset(select = "value") |>                  # use value
+  as.numeric()                                 # remove row number
+
+date_of_recovery_EUROSTOXX50_pandemic <-       # determine recovery date
+  EUROSTOXX50_data |>                          # load EUROSTOXX50 data
+  subset(date >= "2020-02-19") |>              # subset rows by date
+  subset(value > starting_value_EUROSTOXX50_pandemic) |>  
+  extract(1, ) |>                              # extract appropriate row
+  subset(select = "date")                      # use the date
+
+ending_value_EUROSTOXX50_pandemic <-           # determine ending value
+  EUROSTOXX50_data |>                          # load EUROSTOXX50 data
+  subset(date == "2021-12-30") |>              # select row by date
+  subset(select = "value") |>                  # use value
+  as.numeric()                                 # remove row number
+  
+pct_drop_EUROSTOXX50_pandemic <-                    # determine percentage drop
+  min_value_EUROSTOXX50_pandemic |>                 # use minimum value
+  divide_by(starting_value_EUROSTOXX50_pandemic) |> # divide by starting value
+  subtract(1) |>                                    # compute relative change
+  multiply_by(100) |>                               # convert to percentage
+  as.numeric()                                      # remove row number
+
+pct_increase_EUROSTOXX50_pandemic <-            # determine percentage increase  
+  ending_value_EUROSTOXX50_pandemic |>          # use ending value
+  divide_by(min_value_EUROSTOXX50_pandemic) |>  # divide by minimum value
+  subtract(1) |>                                # compute relative change
+  multiply_by(100) |>                           # convert to percentage
+  as.numeric()                                  # remove row number
+
+recovery_speed_EUROSTOXX50_pandemic <-                # determine recovery time 
+  date_of_recovery_EUROSTOXX50_pandemic |>            # load  date of recovery
+  subtract(date_of_bottom_EUROSTOXX50_pandemic) |>    # subtract date of bottom
+  as.numeric()  
+
+min_value_SandP_pandemic <-                   # determine S&P 500 minimum
+  SandP_data |>                               # load S&P 500 data
+  subset(date >= "2020-02-19") |>             # subset rows by date
+  subset(select = "value") |>                 # use value
+  min()                                       # find minimum value
+
+date_of_bottom_SandP_pandemic <-               # determine date of S&P 500 bottom
+  SandP_data |>                                # load S&P 500 data
+  subset(value == min_value_SandP_pandemic) |> # select row
+  subset(select = "date")                      # use date
+
+starting_value_SandP_pandemic <-              # determine S&P 500 starting value
+  SandP_data |>                               # load S&P 500 data
+  subset(date == "2020-02-19") |>             # select row by date
+  subset(select = "value") |>                 # use value
+  as.numeric()                                # remove date
+
+date_of_recovery_SandP_pandemic <-             # determine when S&P 500 recovers
+  SandP_data |>                                # load S&P 500 data
+  subset(date >= "2020-02-19") |>              # subset rows by date
+  subset(value > starting_value_SandP_pandemic) |>  
+  extract(1, ) |>                              # extract appropriate row
+  subset(select = "date")                      # use the date
+
+ending_value_SandP_pandemic <-                # determine S&P 500 ending value
+  SandP_data |>                               # load S&P 500 data
+  subset(date == "2021-12-30") |>             # select row by date
+  subset(select = "value") |>                  # use value
+  as.numeric()                                 # remove row number
+  
+pct_drop_SandP_pandemic <-
+  min_value_SandP_pandemic |>                 # use S&P 500 minimum value
+  divide_by(starting_value_SandP_pandemic) |> # divide by S&P 500 starting value
+  subtract(1) |>                              # compute relative change
+  multiply_by(100) |>                         # convert to percentage
+  as.numeric()                                # remove row number
+
+pct_increase_SandP_pandemic <-                # determine increase in S&P 500 
+  ending_value_SandP_pandemic |>              # use S&P 500 ending value
+  divide_by(min_value_SandP_pandemic) |>      # divide by S&P 500 minimum value
+  subtract(1) |>                              # compute relative change
+  multiply_by(100) |>                         # convert to percentage
+  as.numeric()                                # remove row number
+
+recovery_speed_SandP_pandemic <-              # determine recovery time in days
+  date_of_recovery_SandP_pandemic |>          # load the date of recovery
+  subtract(date_of_bottom_SandP_pandemic) |>  # subtract the date of bottom
+  as.numeric()                                # remove row number 
+```
+
+Finaly we use the stargazer package to export the data to a .tex file
+```{r LaTeX table 1}
+c(
+  pct_drop_SOFIX_gfc, 
+  pct_drop_EUROSTOXX50_gfc, 
+  pct_drop_SandP_gfc,
+  pct_drop_SOFIX_pandemic, 
+  pct_drop_EUROSTOXX50_pandemic, 
+  pct_drop_SandP_pandemic
+  ) |> 
+  data.frame() |>
+  cbind(
+    c(
+      pct_increase_SOFIX_gfc, 
+      pct_increase_EUROSTOXX50_gfc, 
+      pct_increase_SandP_gfc,
+      pct_increase_SOFIX_pandemic, 
+      pct_increase_EUROSTOXX50_pandemic, 
+      pct_increase_SandP_pandemic
+    )
+  ) |>
+  cbind(
+    c(
+      "NA", 
+      "NA", 
+      recovery_speed_SandP_gfc,
+      recovery_speed_SOFIX_pandemic, 
+      recovery_speed_EUROSTOXX50_pandemic, 
+      recovery_speed_SandP_pandemic
+    )
+  ) |>  
+  set_colnames(
+    c(
+      "Change to bottom (%)", 
+      "Change for the period (%)",
+      "Days to recover")
+    ) |>
+  set_rownames(
+    c(
+      "SOFIX", "EUROSTOXX50", "S\\&P 500",
+      "SOFIX 2", "EUROSTOXX50 2", "S\\&P 500 2"
+      )
+    ) |> 
+  stargazer(
+    style = "AER", 
+    out = paste0(getwd(),"/", "table_1.tex"), 
+    summary = F, 
+    digits = 0, 
+    table.placement = "h", 
+    title = "Descriptive statistics for the pandemic period",
+    label = "table: pandemic",
+    notes = "not yet sure",
+    notes.align = "l"
+    )
+  
+```
+
+# 2. Monetary Policy Support
+## Figure 2. Monetary Policy Support 
+### Bulgarian Data Financial Crisis
+The code below imports data for Bulgaria's GDP that was downloaded by Infostat
+(https://infostat.nsi.bg/infostat/pages/reports/query.jsf?x_2=1117)
+
+```{r load Bulgarian GDP}
+bg_gdp <-                                                # load BGN GDP data
+  fpath("GDP 1995-2021.xlsx") |>                         # set path to file
+  read_excel(                                            # call read_excel()
+   range = "A5:B112",                                    # specify cell range
+   col_names = F                                         # use data directly
+) |>
+  set_colnames(                                          # rename columns
+    c("date", "value")
+    ) |>
+  transform(                                             
+    date = quarter_str(1995:2021)                        # replace dates
+    ) |> 
+  transform(                                             # add column with years
+    year = substr(
+      x = date, 
+      start = 4,
+      stop = 7) 
+  )
+```
+
+The code below imports data for Bulgarian net domestic assets that was 
+downloaded by Bulgaria's national bank website. 
+https://www.bnb.bg/bnbweb/groups/public/documents/bnb_download/s_ms_monetary_survey_a00_en.xlsx
+https://www.bnb.bg/Statistics/StMonetaryInterestRate/StMonetarySurvey/index.htm?toLang=_EN
+
+```{r load Bulgarian net domestic assets}
+bg_assets <- 
+  fpath("s_ms_monetary_survey_a00_en.xlsx") |>           # set path to file
+  read_excel(                                            # call read_excel()
+    range = "B16:LE16",                                  # specify cell range
+    col_names = F                                        # use data directly
+    ) |>
+  t() |>                                                 # transpose 
+  cbind(                                                 # add bg asset dates
+# the pipe below imports the dates for the range above  
+    path("s_ms_monetary_survey_a00_en.xlsx") |>          # set path to file
+    read_excel(                                          # call read_excel()
+      range = "B2:LE2",                                  # specify cell range
+      col_names = F                                      # use data directly
+      ) |> 
+      t()                                                # transpose
+# end of pipe    
+    ) |>
+  as.data.frame() |>                                     # convert to dataframe
+  transform(
+    date = as.Date(V2),                                  # convert dates to date
+    value = as.numeric(V1)                               # values to numeric
+  ) |>
+  subset(select = c("date", "value"))                    # subset columns
+
+```
+
+```{r compute Bulgarian assets change as percentage of GDP}
+bg_assets_change_to_gdp_gfc <- 
+  bg_assets |> 
+  subset(
+    date == "2007-12-31" | 
+    date == "2008-12-31" |
+    date == "2009-12-31" |
+    date == "2010-12-31" |
+    date == "2011-12-31" |
+    date == "2012-12-31" |
+    date == "2013-12-31" |
+    date == "2014-12-31" |
+    date == "2015-12-31" 
+    ) |>
+  use_series("value") |>
+  diff(1) |>
+  divide_by(1000) |>
+  divide_by(
+# the pipe below loads GDP data for the relevant years     
+    bg_gdp |>
+      group_by(year) |> 
+      summarise(value = sum(value)) |> 
+      subset(
+        year >= 2008 &
+        year <= 2015 
+        ) |>
+      use_series("value")
+# end of pipe    
+    ) |>
+  multiply_by(100) |> 
+  set_names(
+    paste(2008:2015,"г.")
+    ) 
+
+mean(bg_assets_change_to_gdp_gfc)         # compute the mean
+```
+### Euroarea Data Financial Crisis
+
+Source: Eurostat   Release: National Accounts - GDP (Eurostat)  
+Units:  Millions of Euros, Seasonally Adjusted
+
+Frequency:  Quarterly
+
+Copyright, European Union, http://ec.europa.eu, 1995-2016. Complete terms of use
+are available at http://ec.europa.eu/geninfo/legal_notices_en.htm#copyright"
+
+Data prior to December 31, 1998 are in Millions of ECU.
+
+Included countries: Belgium, Germany, Estonia, Ireland, Greece, Spain, France, 
+Italy, Cyprus, Latvia, Lithuania, Luxembourg, Malta, the Netherlands, Austria, 
+Portugal, Slovenia, Slovakia and Finland.
+
+Suggested Citation:
+Eurostat, Gross Domestic Product (Euro/ECU series) for Euro Area (19 Countries) 
+[EUNNGDP], retrieved from FRED, Federal Reserve Bank of St. Louis; https://fred.stlouisfed.org/series/EUNNGDP, May 1, 2022.
+
+
+
+```{r load euroarea GDP}
+eu_gdp <- 
+  fredr(
+  series_id = "EUNNGDP",
+  observation_start = as.Date("2008-01-01"),
+  observation_end = as.Date("2021-12-31")
+  ) |>
+  subset(
+    select = c("date", "value")
+    ) |> 
+  transform(
+    date = quarter_str(2008:2021)
+    ) |> 
+  transform(                                             # add column with years
+    year = substr(
+      x = date, 
+      start = 4,
+      stop = 7)
+  )
+```
+
+https://fred.stlouisfed.org/series/ECBASSETSW
+
+Source: European Central Bank  
+
+Release: Weekly Financial Statements of the Eurosystem  
+
+Units:  Millions of Euros, Not Seasonally Adjusted
+
+Frequency:  Weekly
+
+A longer history for this series is available on the monthly series ECBASSETS.
+
+Copyright, 2016, European Central Bank (ECB). Reprinted with permission.
+Suggested Citation:
+
+European Central Bank, Central Bank Assets for Euro Area (11-19 Countries) 
+[ECBASSETSW], retrieved from FRED, Federal Reserve Bank of St. Louis; https://fred.stlouisfed.org/series/ECBASSETSW, February 28, 2022.
+
+```{r load euroarea assets}
+eu_assets <-
+  fredr(
+  series_id = "ECBASSETSW",
+  observation_start = as.Date("2008-01-01"),
+  observation_end = as.Date("2022-01-07")) |>
+  subset(
+    select = c("date", "value")
+    )
+```
+
+```{r compute euroarea assets change as percentage of GDP}
+eu_assets_change_to_gdp_gfc <- 
+  eu_assets |> 
+  subset(
+    date == "2008-01-04" | 
+    date == "2009-01-02" |
+    date == "2010-01-01" |
+    date == "2010-12-31" |
+    date == "2011-12-30" |
+    date == "2012-12-28" |
+    date == "2014-01-03" |
+    date == "2015-01-02" |
+    date == "2016-01-01" 
+    ) |>
+  use_series("value") |>
+  diff(1) |>
+  divide_by(
+# the pipe below loads GDP data for the relevant years     
+    eu_gdp |>
+      group_by(year) |> 
+      summarise(value = sum(value)) |> 
+      subset(
+        year >= 2008 &
+        year <= 2015 
+        ) |>
+      use_series("value")
+# end of pipe    
+    ) |>
+  multiply_by(100) |> 
+  set_names(
+    paste(2008:2015,"г.")
+    ) 
+
+mean(eu_assets_change_to_gdp_gfc)         # compute the mean
+```
+
+### US Data Financial Crisis
+
+Source: U.S. Bureau of Economic Analysis   Release: Gross Domestic Product  
+Units:  Millions of Dollars, Not Seasonally Adjusted
+
+Frequency:  Quarterly
+
+BEA Account Code: NA000334
+
+Suggested Citation:
+U.S. Bureau of Economic Analysis, Gross Domestic Product [NA000334Q], retrieved 
+from FRED, Federal Reserve Bank of St. Louis; 
+https://fred.stlouisfed.org/series/NA000334Q, May 2, 2022.
+```{r load US GDP}
+us_gdp <- 
+  fredr(
+  series_id = "NA000334Q",
+  observation_start = as.Date("2008-01-01"),
+  observation_end = as.Date("2021-12-31")
+  ) |>
+  subset(
+    select = c("date", "value")
+    ) |> 
+  transform(
+    date = quarter_str(2008:2021)
+  ) |> 
+  transform(                                             # add column with years
+    year = substr(
+      x = date, 
+      start = 4,
+      stop =7) 
+  )
+```
+
+Source: Board of Governors of the Federal Reserve System (US)   Release: H.4.1 Factors Affecting Reserve Balances  
+Units:  Millions of U.S. Dollars, Not Seasonally Adjusted
+
+Frequency:  Weekly, As of Wednesday
+
+Suggested Citation:
+Board of Governors of the Federal Reserve System (US), Assets: Total Assets: 
+Total Assets (Less Eliminations from Consolidation): Wednesday Level [WALCL], 
+retrieved from FRED, Federal Reserve Bank of St. Louis; 
+https://fred.stlouisfed.org/series/WALCL, May 2, 2022.
+
+```{r load us assets}
+us_assets <- 
+  fredr(
+  series_id = "WALCL",
+  observation_start = as.Date("2008-01-01"),
+  observation_end = as.Date("2022-01-05")) |>
+  subset(
+    select = c("date", "value")
+    ) 
+```  
+
+```{r compute us assets change as percentage of GDP}
+us_assets_change_to_gdp_gfc <- 
+  us_assets |> 
+  subset(date %in% c("2008-01-02", "2008-12-31", "2009-12-30", "2010-12-29", "2011-12-28", "2013-01-02", "2014-01-01", "2014-12-31", "2015-12-30")) |>
+  use_series("value") |>
+  diff(1) |>
+  divide_by(
+# the pipe below loads GDP data for the relevant years     
+    us_gdp |>
+      group_by(year) |> 
+      summarise(value = sum(value)) |> 
+      subset(
+        year >= 2008 &
+        year <= 2015 
+        ) |>
+      use_series("value")
+# end of pipe    
+    ) |>
+  multiply_by(100) |> 
+  set_names(
+    paste(2008:2015,"г.")
+    ) 
+
+mean(us_assets_change_to_gdp_gfc)         # compute the mean
+```
+  
+
+### Bulgarian Data Pandemic
+```{r compute Bulgarian assets change as percentage of GDP}
+bg_assets_change_to_gdp <- 
+  bg_assets |> 
+  subset(
+    date == "2019-12-31" | 
+    date == "2020-03-31" |
+    date == "2020-06-30" |
+    date == "2020-09-30" |
+    date == "2020-12-31" |
+    date == "2021-03-31" |
+    date == "2021-06-30" |
+    date == "2021-09-30" |
+    date == "2021-12-31" 
+    ) |>
+  use_series("value") |>
+  diff(1) |>
+  divide_by(1000) |>
+  divide_by(
+# the pipe below loads GDP data for the relevant quarters     
+    bg_gdp |>
+      subset(
+        year == 2020 |
+        year == 2021 
+        ) |>
+      use_series("value")
+# end of pipe    
+    ) |>
+  multiply_by(100) |> 
+  set_names(
+    quarter_str(2020:2021)
+    ) 
+
+mean(bg_assets_change_to_gdp)         # compute the mean
+```
+
+### Euroarea Data Pandemic
+
+```{r compute euroarea assets change as percentage of GDP}
+eu_assets_change_to_gdp <- 
+  eu_assets |>
+  subset(date == "2020-01-03" | 
+         date == "2020-04-03" |
+         date == "2020-06-05" |
+         date == "2020-09-04" |
+         date == "2021-01-01" |
+         date == "2021-04-02" |
+         date == "2021-07-02" |
+         date == "2021-09-24" |
+         date == "2022-01-07"
+         ) |> 
+  use_series(value) |>
+  diff(1) |> 
+  set_names(
+    quarter_str(2020:2021)
+    ) |>       
+  divide_by(                         # convert to share of GDP
+# the pipe below loads GDP data for the relevant quarters     
+    eu_gdp |>
+      subset(
+        year == 2020 |
+        year == 2021 
+        ) |>
+      use_series("value")
+# end of pipe      
+    ) |> 
+  multiply_by(100)                    # convert to percent
+
+mean(eu_assets_change_to_gdp)         # compute the mean 
+
+```
+
+### US Data Pandemic
+```{r compute US assets change as percentage of GDP}
+us_assets_change_to_gdp <- 
+  us_assets |> 
+  subset(date %in% c("2020-01-01", "2020-04-01", "2020-06-03", "2020-09-02", "2020-12-30", "2021-03-31", "2021-06-30", "2021-09-29", "2022-01-05")) |> 
+  use_series(value) |>
+  diff(1) |> 
+  set_names(
+    quarter_str(2020:2021)
+    ) |> 
+  divide_by(                             # convert to share of GDP
+# the pipe below loads GDP data for the relevant quarters 
+    us_gdp |> 
+      subset(year %in% c(2020, 2021)) |>
+      use_series("value")
+# end of pipe   
+    ) |>              
+  multiply_by(100)                       # convert to percent
+
+mean(us_assets_change_to_gdp)         # compute the mean 
+
+```
+
+### Figure 2. Monetary Policy
+```{r draw figure 2 monetary policy}
+
+tikz(                                 # start tikzDevice
+     file = fpath("figure_2.tex"),    # output path and file name
+     width = 5.5, height = 3.5        # set figure size 
+     ) 
+
+par(
+  mfrow = c(1, 2)
+)
+
+bar_plot(
+  bg_assets_change_to_gdp_gfc, 
+  eu_assets_change_to_gdp_gfc,
+  us_assets_change_to_gdp_gfc,
+  y_ticks = 10,
+  y_axis = TRUE,
+  y_lim = c(-10, 35),
+  mar_values = c(2, 3.5, 2, 1)
+)
+
+title(
+  main = "А. Световна финансова криза",          # set plot title
+  font.main = 1,                                 # set title font to plain
+  cex.main = 0.9                                 # expand characters by 0.9
+)
+
+bar_plot(
+  bg_assets_change_to_gdp, 
+  eu_assets_change_to_gdp,
+  us_assets_change_to_gdp,
+  y_ticks = 10,
+  y_axis = FALSE,
+  y_lim = c(-10, 35),
+  mar_values = c(2, 1, 2, 1)
+)
+
+title(
+  main = "Б. Пандемия от Ковид-19",               # set plot title
+  font.main = 1,                                  # set title font to plain
+  cex.main = 0.9                                  # expand characters by 0.9
+)
+
+legend(								            # add legend to barplot
+  list(x = 20, y = 30),						# position legend 
+   c(                             # specify labels
+  "БГ",
+  "ЕЗ",
+  "САЩ"
+  ),
+  fill = gray.colors(3), 	  	# specify box colors
+  border = F,					        # no border for color boxes
+  bty = "n",						      # specify type of box (no box)
+  cex = 0.9  		 		    		 	# specify font expansion
+)
+
+dev.off()
+```
+
+
+## Table 2. Monetary Policy Support Summary
+
+This table summarizes key data about the monetary policy support throughout the
+two natural experiments of the global financial and economic crisis and the 
+global Covid-19 pandemic. 
+
+```{r LaTeX table 2}
+c(
+  bg_assets_change_to_gdp_gfc |> max(), 
+  eu_assets_change_to_gdp_gfc |> max(), 
+  us_assets_change_to_gdp_gfc |> max(),
+  bg_assets_change_to_gdp |> max(), 
+  eu_assets_change_to_gdp |> max(), 
+  us_assets_change_to_gdp |> max()
+  ) |> 
+  data.frame() |>
+  cbind(
+    c(
+  bg_assets_change_to_gdp_gfc |> mean(), 
+  eu_assets_change_to_gdp_gfc |> mean(), 
+  us_assets_change_to_gdp_gfc |> mean(),
+  bg_assets_change_to_gdp |> mean(), 
+  eu_assets_change_to_gdp |> mean(), 
+  us_assets_change_to_gdp |> mean()
+    )
+  ) |>  
+  set_colnames(
+    c(
+      "Maximimum value (% of GDP)", 
+      "Average value (% of GDP)"
+      )
+    ) |>
+  set_rownames(
+    c(
+      "Bulgaria", "Euro Area", "United States",
+      "Bulgaria_", "Euro Area_", "United States_"
+      )
+    ) |> 
+  stargazer(
+    style = "AER", 
+    out = fpath("table_2.tex"), 
+    summary = F, 
+    digits = 1, 
+    table.placement = "h", 
+    title = "Descriptive statistics for the monetary expansion",
+    label = "table: monetary",
+    notes = "not yet sure",
+    notes.align = "l"
+    )
+  
+```
+
+# 3. Fiscal Policy Support
+## Figure 3. Government Fiscal Support 
+### Bulgarian Fiscal Data Financial Crisis
+
+```{r compute bulgarian government balance post gfc}
+bg_budget_balance_gfc <- 
+  fpath("bulgaria_budget_balance_2008_2015_annual.csv") |> 
+  read.table(
+    header = T,                          # files have header
+    sep = ",",                           # separator is tab
+    dec = ".",                           # decimal point is comma
+    colClasses = c(rep("NULL", 6),       # skip first 6 columns
+                   "character",          # 7th column is character
+                   "numeric",            # 8th column is numeric
+                   "numeric",            # 9th column is numeric
+                   "NULL"),              # skip last column
+    col.names = c(rep("misc", 6),        # name of first column
+                  "country",             # name of column 7
+                  "year",                # name of column 8
+                  "value",               # name of column 7
+                  "misc")                # name of name of last column
+  ) |> 
+  use_series(value) |> 
+  set_names(
+    paste(2008:2015,"г.")
+  )
+```
+
+### Euroarea Fiscal Data Financial Crisis
+
+https://ec.europa.eu/eurostat/databrowser/view/GOV_10DD_EDPT1__custom_2685491/default/table?lang=en
+
+```{r compute euroarea government balance post gfc}
+euroarea_gov_balance_gfc_raw <- 
+  fpath("gov_10dd_edpt1__euroarea_2008_2015_annual.csv") |> 
+  read.table(
+    header = T,                          # files have header
+    sep = ",",                           # separator is tab
+    dec = ".",                           # decimal point is comma
+    colClasses = c(rep("NULL", 6),       # skip first 6 columns
+                   "character",          # 7th column is character
+                   "numeric",            # 8th column is numeric
+                   "numeric",            # 9th column is numeric
+                   "NULL"),              # skip last column
+    col.names = c(rep("misc", 6),        # name of first column
+                  "country",             # name of column 7
+                  "year",                # name of column 8
+                  "value",               # name of column 7
+                  "misc")                # name of name of last column
+  ) 
+
+non_members_balance_2008 <- 
+  euroarea_gov_balance_gfc_raw |> 
+  filter(
+    country == "SK" | 
+    country == "EE" | 
+    country == "LT" | 
+    country == "LV" 
+  ) |> 
+  filter(
+    year == 2008  
+  ) |> 
+  use_series(value) |> 
+  sum()
+
+non_members_balance_2009 <- 
+  euroarea_gov_balance_gfc_raw |> 
+  filter(
+    country == "EE" | 
+    country == "LT" | 
+    country == "LV" 
+  ) |> 
+  filter(
+    year == 2009  
+  ) |> 
+  use_series(value) |> 
+  sum()
+
+non_members_balance_2010 <- 
+  euroarea_gov_balance_gfc_raw |> 
+  filter(
+    country == "EE" | 
+    country == "LT" | 
+    country == "LV" 
+  ) |> 
+  filter(
+    year == 2010  
+  ) |> 
+  use_series(value) |> 
+  sum()
+
+non_members_balance_2011 <- 
+  euroarea_gov_balance_gfc_raw |> 
+  filter(
+    country == "LT" | 
+    country == "LV" 
+  ) |> 
+  filter(
+    year == 2011  
+  ) |> 
+  use_series(value) |> 
+  sum()
+
+non_members_balance_2012 <- 
+  euroarea_gov_balance_gfc_raw |> 
+  filter(
+    country == "LT" | 
+    country == "LV" 
+  ) |> 
+  filter(
+    year == 2012  
+  ) |> 
+  use_series(value) |> 
+  sum()
+
+non_members_balance_2013 <- 
+  euroarea_gov_balance_gfc_raw |> 
+  filter(
+    country == "LT" | 
+    country == "LV" 
+  ) |> 
+  filter(
+    year == 2013  
+  ) |> 
+  use_series(value) |> 
+  sum()
+
+non_members_balance_2014 <- 
+  euroarea_gov_balance_gfc_raw |> 
+  filter(
+    country == "LV" 
+  ) |> 
+  filter(
+    year == 2014  
+  ) |> 
+  use_series(value) |> 
+  sum()
+
+non_members_balance <- 
+  c(
+    non_members_balance_2008,
+    non_members_balance_2009,
+    non_members_balance_2010,
+    non_members_balance_2011,
+    non_members_balance_2012,
+    non_members_balance_2013,
+    non_members_balance_2014,
+    0
+  )
+
+euroarea_gov_balance_gfc <- 
+  euroarea_gov_balance_gfc_raw |> 
+  group_by(year) |> 
+  summarise("aggregate_balance" = sum(value)) |> 
+  ungroup() |> 
+  mutate(aggregate_balance = aggregate_balance - non_members_balance)
+  
+```
+
+https://ec.europa.eu/eurostat/databrowser/view/GOV_10DD_EDPT1__custom_2687269/default/table?lang=en
+
+```{r compute euroarea gdp post gfc}
+euroarea_gdp_gfc_raw <- 
+  fpath("euroarea_gdp_2008_2015_annual.csv") |> 
+  read.table(
+    header = T,                          # files have header
+    sep = ",",                           # separator is tab
+    dec = ".",                           # decimal point is comma
+    colClasses = c(rep("NULL", 6),       # skip first 6 columns
+                   "character",          # 7th column is character
+                   "numeric",            # 8th column is numeric
+                   "numeric",            # 9th column is numeric
+                   "NULL"),              # skip last column
+    col.names = c(rep("misc", 6),        # name of first column
+                  "country",             # name of column 7
+                  "year",                # name of column 8
+                  "value",               # name of column 7
+                  "misc")                # name of name of last column
+  ) 
+
+non_members_gdp_2008 <- 
+  euroarea_gdp_gfc_raw |> 
+  filter(
+    country == "SK" | 
+    country == "EE" | 
+    country == "LT" | 
+    country == "LV" 
+  ) |> 
+  filter(
+    year == 2008  
+  ) |> 
+  use_series(value) |> 
+  sum()
+
+non_members_gdp_2009 <- 
+  euroarea_gdp_gfc_raw |> 
+  filter(
+    country == "EE" | 
+    country == "LT" | 
+    country == "LV" 
+  ) |> 
+  filter(
+    year == 2009  
+  ) |> 
+  use_series(value) |> 
+  sum()
+
+non_members_gdp_2010 <- 
+  euroarea_gdp_gfc_raw |> 
+  filter(
+    country == "EE" | 
+    country == "LT" | 
+    country == "LV" 
+  ) |> 
+  filter(
+    year == 2010  
+  ) |> 
+  use_series(value) |> 
+  sum()
+
+non_members_gdp_2011 <- 
+  euroarea_gdp_gfc_raw |> 
+  filter(
+    country == "LT" | 
+    country == "LV" 
+  ) |> 
+  filter(
+    year == 2011  
+  ) |> 
+  use_series(value) |> 
+  sum()
+
+non_members_gdp_2012 <- 
+  euroarea_gdp_gfc_raw |> 
+  filter(
+    country == "LT" | 
+    country == "LV" 
+  ) |> 
+  filter(
+    year == 2012  
+  ) |> 
+  use_series(value) |> 
+  sum()
+
+non_members_gdp_2013 <- 
+  euroarea_gdp_gfc_raw |> 
+  filter(
+    country == "LT" | 
+    country == "LV" 
+  ) |> 
+  filter(
+    year == 2013  
+  ) |> 
+  use_series(value) |> 
+  sum()
+
+non_members_gdp_2014 <- 
+  euroarea_gdp_gfc_raw |> 
+  filter(
+    country == "LV" 
+  ) |> 
+  filter(
+    year == 2014  
+  ) |> 
+  use_series(value) |> 
+  sum()
+
+non_members_gdp <- 
+  c(
+    non_members_gdp_2008,
+    non_members_gdp_2009,
+    non_members_gdp_2010,
+    non_members_gdp_2011,
+    non_members_gdp_2012,
+    non_members_gdp_2013,
+    non_members_gdp_2014,
+    0
+  )
+
+euroarea_gdp_gfc <- 
+  euroarea_gdp_gfc_raw |> 
+  group_by(year) |> 
+  summarise("aggregate_gdp" = sum(value)) |> 
+  ungroup() |> 
+  mutate(aggregate_gdp = aggregate_gdp - non_members_gdp)
+```
+
+There is enough data now to compute the post gfc budget balance as percentage of
+GDP
+
+```{r}
+eu_budget_balance_gfc <- 
+  euroarea_gov_balance_gfc |> 
+  use_series(aggregate_balance) |> 
+  divide_by(
+    euroarea_gdp_gfc |> 
+      use_series(aggregate_gdp)
+  ) |> 
+  multiply_by(100) |> 
+  set_names(
+    paste(2008:2015,"г.")
+    ) 
+
+mean(eu_budget_balance_gfc)
+```
+
+
+### US Fiscal Data Financial Crisis
+Source: U.S. Bureau of Economic Analysis   Release: Gross Domestic Product  
+Units:  Billions of Dollars, Not Seasonally Adjusted
+
+Frequency:  Annual
+
+BEA Account Code: M318501
+
+For more information about this series, please see http://www.bea.gov/national/.
+
+Suggested Citation:
+U.S. Bureau of Economic Analysis, Federal government budget surplus or deficit 
+(-) [M318501A027NBEA], retrieved from FRED, Federal Reserve Bank of St. Louis; https://fred.stlouisfed.org/series/M318501A027NBEA, May 9, 2022.
+
+```{r compute us budget balance after gfc as percentage of GDP}
+us_budget_balance_gfc <- 
+  fredr(
+  series_id = "M318501A027NBEA",
+  observation_start = as.Date("2008-01-01"),
+  observation_end = as.Date("2015-12-31")
+  ) |>
+  transform(                                  # add column with years
+    year = substr(
+      x = date, 
+      start = 1,
+      stop = 4) 
+  ) |> 
+  subset(
+    select = c("year", "value")
+  ) |> 
+  transform(                                  # convert to millions
+    value = value*1000
+  ) |> 
+  use_series(value) |> 
+  divide_by(
+# the pipe below loads GDP data for the relevant years     
+    us_gdp |>
+      group_by(year) |> 
+      summarise(value = sum(value)) |> 
+      subset(
+        year >= 2008 &
+        year <= 2015 
+        ) |>
+      use_series("value")
+# end of pipe    
+    ) |>
+  multiply_by(100) |> 
+  set_names(
+    paste(2008:2015,"г.")
+    ) 
+
+```  
+
+
+```{r draw figure 5}
+tikz(                                 # start tikzDevice
+     file = fpath("figure_5.tex"),    # output path and file name
+     width = 5.5, height = 4          # size of figure
+     ) 
+
+bar_plot(
+  bg_budget_balance_gfc, 
+  eu_budget_balance_gfc,
+  us_budget_balance_gfc,
+  y_ticks = 2
+)
+
+legend(								            # add legend to barplot
+  list(x = 24, y = -7.5),						# position legend 
+  c(                             	# specify labels
+  "България", 
+  "Еврозона",
+  "САЩ"
+  ),
+  fill = gray.colors(3), 	  	# specify box colors
+  border = F,					        # no border for color boxes
+  bty = "n",						      # specify type of box (no box)
+  cex = 0.9  		 		    		 	# specify font expansion
+)
+
+dev.off()
+
+```
+### Bulgarian Fiscal Data Pandemic
+
+https://ec.europa.eu/eurostat/databrowser/view/gov_10q_ggnfa/default/table?lang=en
+
+Quarterly non-financial accounts for general government (online data code: GOV_10Q_GGNFA )
+Source of data:  Eurostat
+
+```{r load bulgarian government balance to gdp }
+
+bg_budget_balance <- 
+  fpath("bulgaria_budget_balance_2020_2021_quarterly.csv") |> 
+  read.table(
+    header = T,                          # files have header
+    sep = ",",                           # separator is tab
+    dec = ".",                           # decimal point is comma
+    colClasses = c(rep("NULL", 9),       # skip first 9 columns
+                   "numeric",            # tenth column is numeric
+                   "NULL"),              # skip last column
+    col.names = c(rep("misc", 9),        # name of first column
+                  "value",               # name of column 10
+                  "misc")                # name of name of last column
+  ) |> 
+  use_series(value) |> 
+  set_names(
+    quarter_str(2020:2021) 
+  ) 
+
+```
+
+
+### Euroarea Fiscal Data Pandemic
+
+https://ec.europa.eu/eurostat/databrowser/view/gov_10q_ggnfa/default/table?lang=en
+
+Quarterly non-financial accounts for general government (online data code: GOV_10Q_GGNFA )
+Source of data:  Eurostat
+
+```{r}
+eu_budget_balance <- 
+  fpath("euroarea_budget_balance_2020_2021_quarterly.csv") |> 
+  read.table(
+    header = T,                          # files have header
+    sep = ",",                           # separator is tab
+    dec = ".",                           # decimal point is comma
+    colClasses = c(rep("NULL", 9),       # skip first 9 columns
+                   "numeric",            # tenth column is numeric
+                   "NULL"),              # skip last column
+    col.names = c(rep("misc", 9),        # name of first column
+                  "value",               # name of column 10
+                  "misc")                # name of name of last column
+  ) |> 
+  use_series(value) |> 
+  set_names(
+    quarter_str(2020:2021) 
+  ) 
+
+```
+
+### US Fiscal Data Pandemic
+Source: U.S. Department of the Treasury. Fiscal Service   Release: Monthly 
+Treasury Statement  
+Units:  Millions of Dollars, Not Seasonally Adjusted
+
+Frequency:  Monthly
+
+The Monthly Treasury Statement can be found on FiscalData and is available for 
+download in multiple machine-readable formats with complete metadata.
+
+Suggested Citation:
+U.S. Department of the Treasury. Fiscal Service, Federal Surplus or Deficit [-] 
+[MTSDS133FMS], retrieved from FRED, Federal Reserve Bank of St. Louis; https://fred.stlouisfed.org/series/MTSDS133FMS, August 25, 2021.
+
+```{r}
+us_budget_balance <- 
+  fredr(
+  series_id = "MTSDS133FMS",
+  observation_start = as.Date("2020-01-01"),
+  observation_end = as.Date("2021-12-01")
+  ) |>
+  subset(select = c("date", "value")) |> 
+  transform(
+    quarter = mapply(
+    \(x) rep(x, 3), 
+    quarter_str(2020:2021)
+    ) |>                                 # tripling quarter labels
+    as.vector()                          # convert matrix to vector
+             ) |> 
+  group_by(quarter) |> 
+  summarise(value = sum(value)) |> 
+  ungroup() |> 
+  use_series(value) |> 
+  extract(c(1, 3, 5, 7, 2, 4, 6, 8)) |>   # arrange the result
+  divide_by(                              # convert to share of GDP
+# the pipe below loads GDP data for the relevant quarters 
+    us_gdp |> 
+      subset(
+        year == 2020 |
+        year == 2021 
+        ) |>
+      use_series("value")
+# end of pipe  
+    ) |>
+  multiply_by(100) |>                     # convert to percent
+  set_names(
+    quarter_str(2020:2021) 
+  ) 
+  
+
+
+```
+
+Source: U.S. Bureau of Economic Analysis   Release: Gross Domestic Product  
+Units:  Billions of Dollars, Not Seasonally Adjusted
+
+Frequency:  Quarterly
+
+BEA Account Code: M318501
+
+For more information about this series, please see http://www.bea.gov/national/.
+
+Suggested Citation:
+U.S. Bureau of Economic Analysis, Federal government budget surplus or deficit 
+(-) [M318501Q027NBEA], retrieved from FRED, Federal Reserve Bank of St. Louis; https://fred.stlouisfed.org/series/M318501Q027NBEA, May 9, 2022.
+
+## Figure 3. Government Fiscal Support 
+
+
+### Figure 3. Fiscal Support
+```{r figure 3 fiscal support}
+
+tikz(                                 # start tikzDevice
+     file = fpath("figure_3.tex"),    # output path and file name
+     width = 5.5, height = 3.5        # set figure size 
+     ) 
+
+par(
+  mfrow = c(1, 2)
+)
+
+bar_plot(
+  bg_budget_balance_gfc,        
+  eu_budget_balance_gfc,
+  us_budget_balance_gfc,
+  y_ticks = 10,
+  y_axis = TRUE,
+  y_lim = c(-45, 10),
+  mar_values = c(2, 3.5, 2, 1)
+)
+
+title(
+  main = "А. Световна финансова криза",          # set plot title
+  font.main = 1,                                 # set title font to plain
+  cex.main = 0.9                                 # expand characters by 0.9
+) 
+
+bar_plot(
+  bg_budget_balance,        
+  eu_budget_balance,
+  us_budget_balance,
+  y_ticks = 10,
+  y_axis = FALSE,
+  y_lim = c(-45, 10),
+  mar_values = c(2, 1, 2, 1)
+)
+
+title(
+  main = "Б. Пандемия от Ковид-19",          # set plot title
+  font.main = 1,                             # set title font to plain
+  cex.main = 0.9                             # expand characters by 0.9
+) 
+
+legend(								            # add legend to barplot
+  list(x = 21, y = -25),					# position legend 
+  c(                             	# specifying the labels
+  "БГ", 
+  "ЕЗ",
+  "САЩ"
+  ),
+  fill = gray.colors(3), 	  	   # specify colors
+  border = F,					           # no border for color boxes
+  bty = "n",						         # specify type of box (no box)
+  cex = 0.9  		 		    		 	   # specify font expansion
+)
+
+dev.off()
+```
+
+
+## Table 3. Government Fiscal Support Summary
+
+This table summarizes key data about the fiscal policy support throughout the
+two natural experiments of the global financial and economic crisis and the 
+global Covid-19 pandemic. 
+
+```{r LaTeX table 3}
+c(
+  bg_budget_balance_gfc |> min(), 
+  eu_budget_balance_gfc |> min(), 
+  us_budget_balance_gfc |> min(),
+  bg_budget_balance |> min(), 
+  eu_budget_balance |> min(), 
+  us_budget_balance |> min()
+  ) |> 
+  data.frame() |>
+  cbind(
+    c(
+  bg_budget_balance_gfc |> mean(), 
+  eu_budget_balance_gfc |> mean(), 
+  us_budget_balance_gfc |> mean(),
+  bg_budget_balance |> mean(), 
+  eu_budget_balance |> mean(), 
+  us_budget_balance |> mean()
+    )
+  ) |>  
+  set_colnames(
+    c(
+      "Maximimum value (% of GDP)", 
+      "Average value (% of GDP)"
+      )
+    ) |>
+  set_rownames(
+    c(
+      "Bulgaria", "Euro Area", "United States",
+      "Bulgaria_", "Euro Area_", "United States_"
+      )
+    ) |> 
+  stargazer(
+    style = "AER", 
+    out = fpath("table_3.tex"), 
+    summary = F, 
+    digits = 1, 
+    table.placement = "h", 
+    title = "Descriptive statistics for the fiscal support",
+    label = "table: fiscal",
+    notes = "not yet sure",
+    notes.align = "l"
+    )
+  
+```
+
