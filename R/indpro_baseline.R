@@ -11,7 +11,7 @@
 #' indpro_baseline()
 indpro_baseline <- function () {
 
-# convert indpro to percentage change compared to base and initiate plot
+# convert indpro_us to percentage change compared to base and initiate plot
   indpro_us |>
     dplyr::mutate(date = as.Date(date)) |>
     dplyr::filter(date >= as.Date("1929-07-01"), date <= as.Date("1932-07-01")) |>

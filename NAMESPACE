@@ -2,3 +2,4 @@
 
 export(indpro_baseline)
 export(indpro_gr)
+export(stocks_baseline)

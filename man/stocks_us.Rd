@@ -10,7 +10,7 @@
 A tibble object with 1,152 rows and 2 columns:
 \describe{
 \item{date}{a date indicating the year and the last working day of the month in the time series}
-\item{value}{a numeric indicating the closing value of the S&P 500 index for the respective month}
+\item{value}{a numeric showing the mean of the highest and lowest value of the S&P 500 index for the respective month}
 }
 }
 }
@@ -22,7 +22,7 @@ stocks_us
 }
 \description{
 Stock market data from Yahoo! Finance for the period Dec 30, 1927--Nov 11, 2023.
-The data is on a monthly bases with the value of the index taken at the closing prices
-on the last working day of each month.
+The data is on a monthly bases with the value of the index taken as the average of
+the highest and lowest price for the respective month.
 }
 \keyword{datasets}
