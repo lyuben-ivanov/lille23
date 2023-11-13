@@ -21,7 +21,7 @@ A tibble object with 1,257 rows and 2 columns:
 indpro_us
 }
 \description{
-Industrial production data from the Federal Reserve Bank of St. Louis measured
+Industrial production monhtly data from the Federal Reserve Bank of St. Louis measured
 as a seasonally-adjusted index with base year 2017. The original source of the data
 is the release \href{https://www.federalreserve.gov/releases/g17/}{G.17 Industrial Production and Capacity Utilization}.
 }

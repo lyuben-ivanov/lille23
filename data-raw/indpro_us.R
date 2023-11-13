@@ -1,4 +1,4 @@
-## code to prepare `indpro` dataset goes here
+## code to prepare `indpro_us` dataset goes here
 
 fredr::fredr(
   series_id = "INDPRO"

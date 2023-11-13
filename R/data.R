@@ -1,6 +1,6 @@
 #' FRED US industrial production index
 #'
-#' Industrial production data from the Federal Reserve Bank of St. Louis measured
+#' Industrial production monhtly data from the Federal Reserve Bank of St. Louis measured
 #' as a seasonally-adjusted index with base year 2017. The original source of the data
 #' is the release [G.17 Industrial Production and Capacity Utilization](https://www.federalreserve.gov/releases/g17/).
 #'
@@ -14,6 +14,22 @@
 #' @references Board of Governors of the Federal Reserve System (US), Industrial Production: Total Index \[INDPRO\],
 #' retrieved from FRED, Federal Reserve Bank of St. Louis; https://fred.stlouisfed.org/series/INDPRO, November 5, 2023.
 "indpro_us"
+
+#' FRED EA19 industrial production index
+#'
+#' Industrial production monthly data for the Euro Area (19 countries) from the OECD measured
+#' as a seasonally-adjusted index with base year 2015. The original source of the data
+#' is the release [Main Economic Indicators](http://www.oecd-ilibrary.org/economics/data/main-economic-indicators/main-economic-indicators-complete-database_data-00052-en).
+#'
+#' @format ## `indpro_ea`
+#' A tibble object with 577 rows and 2 columns:
+#' \describe{
+#'   \item{date}{a date indicating the year and the month in the time series}
+#'   \item{value}{a numeric indicating the value of the industrial production index for the respective month}
+#' }
+#' @source <https://fred.stlouisfed.org/series/EA19PRINTO01IXOBSAM>
+#' @references Organization for Economic Co-operation and Development, Production: Industry: Total Industry Excluding Construction for Euro Area (19 Countries) \[EA19PRINTO01IXOBSAM\], retrieved from FRED, Federal Reserve Bank of St. Louis; https://fred.stlouisfed.org/series/EA19PRINTO01IXOBSAM, November 13, 2023.
+"indpro_ea"
 
 
 #' S&P 500 stock prices

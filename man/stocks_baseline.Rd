@@ -2,7 +2,7 @@
 % Please edit documentation in R/stocks_baseline.R
 \name{stocks_baseline}
 \alias{stocks_baseline}
-\title{Baseline stocks dynamics}
+\title{Stocks dynamics during the Great Depression plot}
 \usage{
 stocks_baseline()
 }

@@ -47,6 +47,6 @@ indpro_baseline <- function () {
 
 # add label
 
-  mtext(text = "Baseline", side = 4, at = -53.56, las = 2, line = -0.33)
+  mtext(text = "Base", side = 4, at = -53.56, las = 2, line = -0.33)
 
 }

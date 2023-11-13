@@ -1,4 +1,4 @@
-#' Baseline stocks dynamics
+#'  Stocks dynamics during the Great Depression plot
 #'
 #' This function is plotting the dynamics of the S&P 500 index for
 #' the period Sep 1929 - Jun 1932 (peak to minimum). The resulting plot can be used
@@ -48,6 +48,6 @@ stocks_baseline <- function () {
 
   # add label
 
-  mtext(text = "Baseline", side = 4, at = -84.65, las = 2, line = -0.33)
+  mtext(text = "Base", side = 4, at = -84.65, las = 2, line = -0.33)
 
 }
