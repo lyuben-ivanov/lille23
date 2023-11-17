@@ -7,13 +7,13 @@
 #' @export
 #'
 #' @examples
-#' indpro_gr()
+#' indpro_gr_plot()
 #'
- indpro_gr <- function() {
+ indpro_gr_plot <- function() {
 
   # plot baseline scenario
 
-  indpro_baseline()
+  indpro_baseline_plot()
 
   # add great recession data for the USA
 

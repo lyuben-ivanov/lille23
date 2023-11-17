@@ -14,3 +14,8 @@ BugReports: https://github.com/lyuben-ivanov/lille23/issues
 Depends: 
     R (>= 2.10)
 LazyData: true
+Imports: 
+    dplyr
+Suggests: 
+    fredr,
+    yfR

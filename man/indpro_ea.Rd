@@ -3,7 +3,7 @@
 \docType{data}
 \name{indpro_ea}
 \alias{indpro_ea}
-\title{FRED EA19 industrial production index}
+\title{EA19 industrial production index}
 \format{
 \subsection{\code{indpro_ea}}{
 

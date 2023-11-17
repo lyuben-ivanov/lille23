@@ -8,8 +8,8 @@
 #' @export
 #'
 #' @examples
-#' stocks_baseline()
-stocks_baseline <- function () {
+#' stocks_baseline_plot()
+stocks_baseline_plot <- function () {
 
   # convert indpro_us to percentage change compared to base and initiate plot
   stocks_us |>

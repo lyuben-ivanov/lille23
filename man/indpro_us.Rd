@@ -3,7 +3,7 @@
 \docType{data}
 \name{indpro_us}
 \alias{indpro_us}
-\title{FRED US industrial production index}
+\title{US industrial production index}
 \format{
 \subsection{\code{indpro_us}}{
 

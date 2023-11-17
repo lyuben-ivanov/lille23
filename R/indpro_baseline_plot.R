@@ -8,8 +8,8 @@
 #' @export
 #'
 #' @examples
-#' indpro_baseline()
-indpro_baseline <- function () {
+#' indpro_baseline_plot()
+indpro_baseline_plot <- function () {
 
 # convert indpro_us to percentage change compared to base and initiate plot
   indpro_us |>
