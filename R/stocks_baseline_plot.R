@@ -4,12 +4,13 @@
 #' the period Sep 1929 - Jun 1932 (peak to minimum). The resulting plot can be used
 #' as a plot of baseline scenario and other time series can be added to it.
 #'
+#' @param max_value numeric providing the maximum value on the y-axis
 #' @return plot object
 #' @export
 #'
 #' @examples
 #' stocks_baseline_plot()
-stocks_baseline_plot <- function () {
+stocks_baseline_plot <- function (max_value = 0) {
 
   # convert indpro_us to percentage change compared to base and initiate plot
   stocks_us |>
@@ -23,7 +24,7 @@ stocks_baseline_plot <- function () {
       type = "l",
       xlab = "",
       ylab = "",
-      ylim = c(-90, 0)
+      ylim = c(-90, max_value)
     )
 
   # add base line
@@ -40,8 +41,8 @@ stocks_baseline_plot <- function () {
 
   axis(
     side = 2,
-    at = seq(from = 0, to = -90, by = -10),
-    labels = seq(from = 0, to = -90, by = -10) |> paste0("\\%"),
+    at = seq(from = max_value, to = -90, by = -10),
+    labels = seq(from = max_value, to = -90, by = -10) |> paste0("\\%"),
     las = 2,
     tick = F
   )

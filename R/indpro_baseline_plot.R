@@ -4,12 +4,13 @@
 #' the period Jul 1929 - Jul 1932 (peak to minimum). The resulting plot can be used
 #' as a plot of baseline scenario and other time series can be added to it.
 #'
+#' @param max_value numeric providing the maximum value on the y-axis
 #' @return plot object
 #' @export
 #'
 #' @examples
 #' indpro_baseline_plot()
-indpro_baseline_plot <- function () {
+indpro_baseline_plot <- function (max_value = 0) {
 
 # convert indpro_us to percentage change compared to base and initiate plot
   indpro_us |>
@@ -22,7 +23,8 @@ indpro_baseline_plot <- function () {
       axes = F,
       type = "l",
       xlab = "",
-      ylab = ""
+      ylab = "",
+      ylim = c(-55, max_value)
     )
 
 # add base line

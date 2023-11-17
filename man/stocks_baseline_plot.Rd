@@ -4,7 +4,10 @@
 \alias{stocks_baseline_plot}
 \title{Stocks dynamics during the Great Depression plot}
 \usage{
-stocks_baseline_plot()
+stocks_baseline_plot(max_value = 0)
+}
+\arguments{
+\item{max_value}{numeric providing the maximum value on the y-axis}
 }
 \value{
 plot object

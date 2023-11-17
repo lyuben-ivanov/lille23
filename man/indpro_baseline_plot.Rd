@@ -4,7 +4,10 @@
 \alias{indpro_baseline_plot}
 \title{Baseline industrial production}
 \usage{
-indpro_baseline_plot()
+indpro_baseline_plot(max_value = 0)
+}
+\arguments{
+\item{max_value}{numeric providing the maximum value on the y-axis}
 }
 \value{
 plot object
