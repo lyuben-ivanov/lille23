@@ -9,7 +9,7 @@
 
 A tibble object with 442 rows and 2 columns:
 \describe{
-\item{date}{a date indicating the year and the month in the time series}
+\item{date}{a date indicating the year and the month of the observation}
 \item{value}{a numeric indicating the value of the broad share index for the respective month}
 }
 }

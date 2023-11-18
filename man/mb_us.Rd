@@ -7,9 +7,9 @@
 \format{
 \subsection{\code{mb_us}}{
 
-A tibble object with 1268 observations of 2 variables:
+A tibble object with 1269 observations of 2 variables:
 \describe{
-\item{date}{a date indicating the year and the month in the time series}
+\item{date}{a date indicating the year and the month of the observation}
 \item{value}{a numeric indicating the value of the monetary base for the respective month (in billions of US dollars)}
 }
 }

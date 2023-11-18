@@ -56,7 +56,7 @@
 #' @format ## `stocks_ea`
 #' A tibble object with 442 rows and 2 columns:
 #' \describe{
-#'   \item{date}{a date indicating the year and the month in the time series}
+#'   \item{date}{a date indicating the year and the month of the observation}
 #'   \item{value}{a numeric indicating the value of the broad share index for the respective month}
 #' }
 #' @source <https://fred.stlouisfed.org/series/SPASTT01EZM661N>
@@ -72,9 +72,9 @@
 #' The first dataset ends on Nov 2019 and the second one is added to the time series from Dec 2019 to create a complete data set.
 #'
 #' @format ## `mb_us`
-#' A tibble object with 1268 observations of 2 variables:
+#' A tibble object with 1269 observations of 2 variables:
 #' \describe{
-#'   \item{date}{a date indicating the year and the month in the time series}
+#'   \item{date}{a date indicating the year and the month of the observation}
 #'   \item{value}{a numeric indicating the value of the monetary base for the respective month (in billions of US dollars)}
 #' }
 #' @source <https://fred.stlouisfed.org/series/BOGMBASE>
@@ -82,3 +82,24 @@
 #' @references Board of Governors of the Federal Reserve System (US), Monetary Base; Total \[BOGMBASE\], retrieved from FRED, Federal Reserve Bank of St. Louis; https://fred.stlouisfed.org/series/BOGMBASE, November 18, 2023.
 #' @references Federal Reserve Bank of St. Louis, St. Louis Adjusted Monetary Base (DISCONTINUED) \[AMBNS\], retrieved from FRED, Federal Reserve Bank of St. Louis; https://fred.stlouisfed.org/series/AMBNS, November 18, 2023.
 "mb_us"
+
+#' US budget balance as a percentage of GDP
+#'
+#' US budget balance annual data from the Federal Reserve Bank of St. Louis measured as a percentage of GDP.
+#' The data covers the period from 1929 to 2022. Federal Surplus or Deficit \[-\] as Percent of Gross Domestic Product (FYFSGDA188S) was first constructed by the Federal Reserve Bank of St. Louis in October 2012. It is calculated using Federal Surplus or Deficit \[-\] (FYFSD) and Gross Domestic Product (GDPA):
+#'
+#' FYFSGDA188S = ((FYFSD/1000)/GDPA)*100
+#'
+#' FYFSD/1000 transforms FYFSD from millions of dollars to billions of dollars.
+#'
+#' @format ## `bb_us`
+#' A tibble object with 94 observations of 2 variables:
+#' \describe{
+#'   \item{date}{a date indicating the year of the observation}
+#'   \item{value}{a numeric indicating the value of federal budget for the US for the respective year}
+#' }
+#' @source <https://fred.stlouisfed.org/series/FYFSGDA188S>
+#' @references Federal Reserve Bank of St. Louis, Federal Surplus or Deficit [-] as Percent of Gross Domestic Product \[FYFSGDA188S\], retrieved from FRED, Federal Reserve Bank of St. Louis; https://fred.stlouisfed.org/series/FYFSGDA188S, November 18, 2023.
+"bb_us"
+
+#' ECB monetary base
