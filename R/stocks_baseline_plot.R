@@ -1,7 +1,7 @@
 #'  Stocks dynamics during the Great Depression plot
 #'
 #' This function is plotting the dynamics of the S&P 500 index for
-#' the period Sep 1929 - Jun 1932 (peak to minimum). The resulting plot can be used
+#' the period Sep 1929 - Jun 1932 (monthly peak to monthly minimum). The resulting plot can be used
 #' as a plot of baseline scenario and other time series can be added to it.
 #'
 #' @param max_value numeric providing the maximum value on the y-axis

@@ -22,10 +22,10 @@ stocks_ea
 }
 \description{
 Stock prices monthly data for the Euro Area (19 countries) from the OECD measured
-as a index with base year 2015. The original source of the data
+as a index with base year 2015. The data cover the period from Dec 1986 to Sep 2023. The original source of the data
 is the release \href{http://www.oecd-ilibrary.org/economics/data/main-economic-indicators/main-economic-indicators-complete-database_data-00052-en}{Main Economic Indicators}.
 }
 \references{
-Organization for Economic Co-operation and Development, Share Prices: All Shares/Broad: Total for Euro Area (19 Countries) \link{SPASTT01EZM661N}, retrieved from FRED, Federal Reserve Bank of St. Louis; \url{https://fred.stlouisfed.org/series/SPASTT01EZM661N}, November 17, 2023.
+Organization for Economic Co-operation and Development, Share Prices: All Shares/Broad: Total for Euro Area (19 Countries) [SPASTT01EZM661N], retrieved from FRED, Federal Reserve Bank of St. Louis; \url{https://fred.stlouisfed.org/series/SPASTT01EZM661N}, November 17, 2023.
 }
 \keyword{datasets}

@@ -22,7 +22,7 @@ indpro_ea
 }
 \description{
 Industrial production monthly data for the Euro Area (19 countries) from the OECD measured
-as a seasonally-adjusted index with base year 2015. The original source of the data
+as a seasonally-adjusted index with base year 2015. The data covers the period from Jul 1975 to Jul 2023. The original source of the data
 is the release \href{http://www.oecd-ilibrary.org/economics/data/main-economic-indicators/main-economic-indicators-complete-database_data-00052-en}{Main Economic Indicators}.
 }
 \references{
