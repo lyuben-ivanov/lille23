@@ -11,7 +11,8 @@ bp(
   y_ticks = 1,
   y_axis = TRUE,
   y_lim = c(-100, 100),
-  mar_values = c(3, 4, 2, 1)
+  mar_values = c(3, 4, 2, 1),
+  names.arg = c("t+1", "t+2", "t+3")
 )
 }
 \arguments{
@@ -37,11 +38,8 @@ Create barplot with three bars
 }
 \examples{
 x <- seq(-100, 50, by = 75)
-names(x) <- c("Q1", "Q2", "Q3")
 y <- seq(-50, 50, by = 50)
-names(y) <- c("Q1", "Q2", "Q3")
 z <- seq(-20, 60, by = 40)
-names(z) <- c("Q1", "Q2", "Q3")
 bp(x, y, z, y_ticks = 20)
 
 }

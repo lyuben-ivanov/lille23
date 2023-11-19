@@ -95,7 +95,7 @@
 #' @format ## `bb_us`
 #' A tibble object with 94 observations of 2 variables:
 #' \describe{
-#'   \item{date}{a date indicating the year of the observation}
+#'   \item{year}{a numeric indicating the year of the observation}
 #'   \item{value}{a numeric indicating the value of federal budget for the US for the respective year}
 #' }
 #' @source <https://fred.stlouisfed.org/series/FYFSGDA188S>

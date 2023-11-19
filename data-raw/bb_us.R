@@ -7,6 +7,8 @@ fredr::fredr(
 
 bb_us <- read.csv(paste0(getwd(), "/data-raw/bb_us.csv")) |>
   dplyr::select(date, value) |>
-  dplyr::mutate(date = as.Date(date))
+  dplyr::mutate(date = as.Date(date)) |>
+  dplyr::mutate(year = lubridate::year(date)) |>
+  dplyr::select(year, value)
 
 usethis::use_data(bb_us, overwrite = TRUE)

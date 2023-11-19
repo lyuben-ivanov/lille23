@@ -13,11 +13,8 @@
 #'
 #' @examples
 #' x <- seq(-100, 50, by = 75)
-#' names(x) <- c("Q1", "Q2", "Q3")
 #' y <- seq(-50, 50, by = 50)
-#' names(y) <- c("Q1", "Q2", "Q3")
 #' z <- seq(-20, 60, by = 40)
-#' names(z) <- c("Q1", "Q2", "Q3")
 #' bp(x, y, z, y_ticks = 20)
 #'
 bp <- function (                        # add barplot function
@@ -27,7 +24,8 @@ bp <- function (                        # add barplot function
   y_ticks = 1,                          # require tick distance for y-axis
   y_axis = TRUE,                        # ask for y-axis
   y_lim = c(-100, 100),                 # set default value of y-axis limits
-  mar_values = c(3, 4, 2, 1)            # set default value of margins
+  mar_values = c(3, 4, 2, 1) ,          # set default value of margins
+  names.arg = c("t+1", "t+2", "t+3")    # set default value of labels
 ) {
 
   par(mar =                           # set margins around plot
@@ -49,7 +47,9 @@ bp <- function (                        # add barplot function
       xlab = "", 		  					# blank space for the x-axis label,
       border = F, 					    # remove borders
       col = gray.colors(3),	 	  # specify colors
-      ylim = y_lim
+      ylim = y_lim,
+      names.arg = names.arg,	  # specify labels
+      space = c(0.1, 1)
     )
 
   abline(					# add straight line for x-axis
