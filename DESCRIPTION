@@ -15,7 +15,8 @@ Depends:
     R (>= 2.10)
 LazyData: true
 Imports: 
-    dplyr
+    dplyr,
+    lubridate
 Suggests: 
     fredr,
     yfR
