@@ -119,3 +119,37 @@
 #' @references International Monetary Fund, General government net lending/borrowing for Euro Area \[GGNLBAEZA188N\], retrieved from FRED, Federal Reserve Bank of St. Louis; https://fred.stlouisfed.org/series/GGNLBAEZA188N, November 17, 2023.
 #' @references Government deficit/surplus, debt and associated data \[gov_10dd_edpt1\] (2021), Eurostat, https://ec.europa.eu/eurostat/databrowser/bookmark/72101904-17ca-46c3-accb-1d847055ca01?lang=en, November 17, 2023.
 "bb_ea"
+
+#' US nominal GDP
+#'
+#' US nominal GDP annual data from the U.S. Bureau of Economic Analysis, measured in billions of US dollars.
+#' The data covers the period from 1929 to 2022.
+#'
+#'
+#' @format ## `gdp_us`
+#' A tibble object with 94 observations of 2 variables:
+#' \describe{
+#'   \item{year}{a numeric indicating the year of the observation}
+#'   \item{value}{a numeric indicating the gross domestic product for the US for the respective year (in billions of US dollars)}
+#' }
+#' @source <https://fred.stlouisfed.org/series/GDPA>
+#' @references U.S. Bureau of Economic Analysis, Gross Domestic Product [GDPA], retrieved from FRED, Federal Reserve Bank of St. Louis; https://fred.stlouisfed.org/series/GDPA, November 17, 2023.
+"gdp_us"
+
+
+#' Euro Area nominal GDP
+#'
+#' Euro Area nominal GDP annual data from Eurostat measured in millions of Euros/ECU. The data covers the period from 1995 to 2022.
+#'
+#' Euro/ECU series is expressed in euro from January 1, 1999 till present. Prior to December 31, 1998, synthetic exchange rate of the national currency to European Community Unit (ECU) is used to adjust for market exchange rate movements.
+#'
+#'
+#' @format ## `gdp_ea`
+#' A tibble object with 28 observations of 2 variables:
+#' \describe{
+#'   \item{year}{a numeric indicating the year of the observation}
+#'   \item{value}{a numeric indicating the gross domestic product for the Euro Area for the respective year (in millions of Euro/ECU)}
+#' }
+#' @source <https://fred.stlouisfed.org/series/CPMEURNSAB1GQEA19>
+#' @references UEurostat, Gross Domestic Product (Euro/ECU Series) for Euro Area (19 Countries) \[CPMEURNSAB1GQEA19\], retrieved from FRED, Federal Reserve Bank of St. Louis; https://fred.stlouisfed.org/series/CPMEURNSAB1GQEA19, November 18, 2023.
+"gdp_ea"
