@@ -153,3 +153,18 @@
 #' @source <https://fred.stlouisfed.org/series/CPMEURNSAB1GQEA19>
 #' @references UEurostat, Gross Domestic Product (Euro/ECU Series) for Euro Area (19 Countries) \[CPMEURNSAB1GQEA19\], retrieved from FRED, Federal Reserve Bank of St. Louis; https://fred.stlouisfed.org/series/CPMEURNSAB1GQEA19, November 18, 2023.
 "gdp_ea"
+
+
+#' Euro Area monetary base (base money)
+#'
+#' Euro Area monetary base monthly data from the European Central Bank measured in millions of Euros. The data covers the period from Feb 1999 to Oct 2023.
+#'
+#' @format ## `mb_ea`
+#' A tibble object with 261 observations of 2 variables:
+#' \describe{
+#'   \item{date}{a date indicating the year and the month of the observation}
+#'   \item{value}{a numeric indicating the value of the monetary base (base money) at the end of the respective month (in millions of Euros)}
+#' }
+#' @source <https://data.ecb.europa.eu/data/datasets/ILM/ILM.M.U2.C.LT00001.Z5.EUR>
+#' @references European Central Bank, Frankfurt am Main, Germany. Base money, Euro area (changing composition), Monthly. https://data.ecb.europa.eu/data/datasets/ILM/ILM.M.U2.C.LT00001.Z5.EUR, November 2, 2023.
+"mb_ea"
