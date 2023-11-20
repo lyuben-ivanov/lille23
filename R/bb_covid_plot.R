@@ -1,3 +1,14 @@
+#' Plot government budget balance during the COVID-19 pandemic
+#'
+#' This function plots the government budget balance during the years of the COVID-19 pandemic.
+#' Since the pandemic started at the beginning of 2022, the budget balance for the years 2020, 2021, and 2022 is plotted.
+#'
+#' @return plot object
+#' @export
+#'
+#' @examples
+#'
+#' bb_covid_plot()
 bb_covid_plot <- function() {
 
   bar_1 <- bb_us |>
@@ -20,6 +31,16 @@ bb_covid_plot <- function() {
     y_axis = TRUE,
     y_lim = c(-15, 1),
     mar_values = c(3, 4, 2, 1),
-    names.arg = c("t+1", "t+2", "t+3")
+    names.arg = c("t", "t+1", "t+2")
+  )
+
+  # add legend to barplot
+  legend(
+    x = list(x = 9.2, y = -10),
+    legend = c("Baseline", "USA", "Euro Area"),
+    fill = gray.colors(3),
+    border = F,
+    bty = "n",
+    cex = 1.25
   )
 }

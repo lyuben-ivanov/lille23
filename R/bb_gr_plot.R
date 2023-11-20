@@ -1,3 +1,14 @@
+#' Plot government budget balance during the Great Recession
+#'
+#' This function plots the government budget balance during the years of the Great Recession.
+#' Since the Great Recession started at the end of 2007/beginning of 2008, the budget balance for the years 2008, 2009, and 2010 is plotted.
+#'
+#' @return plot object
+#' @export
+#'
+#' @examples
+#' bb_gr_plot()
+#'
 bb_gr_plot <- function() {
 
   bar_1 <- bb_us |>
@@ -23,6 +34,14 @@ bb_gr_plot <- function() {
     names.arg = c("t+1", "t+2", "t+3")
   )
 
-
+  # add legend to barplot
+  legend(
+    x = list(x = 2, y = -5),
+    legend = c("Baseline", "USA", "Euro Area"),
+    fill = gray.colors(3),
+    border = F,
+    bty = "n",
+    cex = 1.25
+  )
 
 }
