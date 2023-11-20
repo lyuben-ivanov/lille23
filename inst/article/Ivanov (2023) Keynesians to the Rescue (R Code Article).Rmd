@@ -1427,7 +1427,7 @@ euroarea_gdp_gfc_raw <-
   read.table(
     header = T,                          # files have header
     sep = ",",                           # separator is tab
-    dec = ".",                           # decimal point is comma
+    dec = ".",                           # decimal point is full stop
     colClasses = c(rep("NULL", 6),       # skip first 6 columns
                    "character",          # 7th column is character
                    "numeric",            # 8th column is numeric

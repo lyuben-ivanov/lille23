@@ -1,0 +1,595 @@
+﻿Obs. Date,Obs. value,Series key,Indicator title,Units,Obs. status
+1999-06,691.2,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+1999-06,356.05,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+1999-07,620.53,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+1999-07,363.89,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+1999-08,403.22,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+1999-08,358.91,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+1999-09,347.71,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+1999-09,359.65,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+1999-10,440.85,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+1999-10,361.49,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+1999-11,368.29,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+1999-11,363.23,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+1999-12,279.35,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+1999-12,393.3,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2000-01,333.39,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2000-01,366.19,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2000-02,246.65,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2000-02,363.81,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2000-03,319.83,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2000-03,366.19,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2000-04,340.42,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2000-04,372.66,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2000-05,345.08,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2000-05,371.78,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2000-06,432.76,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2000-06,374.31,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2000-07,354.74,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2000-07,377.69,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2000-08,336.07,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2000-08,373.24,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2000-09,346.14,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2000-09,373.46,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2000-10,323.32,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2000-10,372.61,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2000-11,265.65,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2000-11,372.21,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2000-12,270.37,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2000-12,390.21,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2001-01,250.85,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2001-01,373.11,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2001-02,249.68,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2001-02,370.52,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2001-03,253.43,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2001-03,370.47,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2001-04,234.84,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2001-04,372.49,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2001-05,266.45,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2001-05,369.54,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2001-06,274.09,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2001-06,368.84,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2001-07,282.68,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2001-07,366.86,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2001-08,259.22,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2001-08,356.04,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2001-09,269.37,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2001-09,346.11,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2001-10,244.66,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2001-10,333.83,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2001-11,277.55,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2001-11,317.39,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2001-12,342.36,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2001-12,285.87,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2002-01,284.68,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2002-01,339.73,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2002-02,282.34,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2002-02,308.22,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2002-03,282.41,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2002-03,309.14,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2002-04,254.84,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2002-04,311.24,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2002-05,268.44,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2002-05,319.57,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2002-06,285.23,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2002-06,329.2,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2002-07,247.45,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2002-07,339.88,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2002-08,255.77,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2002-08,342.3,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2002-09,258.86,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2002-09,346.98,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2002-10,254.36,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2002-10,355.29,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2002-11,255.22,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2002-11,360.77,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2002-12,283.35,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2002-12,392.95,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2003-01,284.06,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2003-01,352.11,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2003-02,276.91,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2003-02,358.07,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2003-03,278.96,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2003-03,365.43,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2003-05,297.63,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2003-05,384.12,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2003-06,307.87,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2003-06,391.39,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2003-07,266.11,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2003-07,403.55,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2003-09,289.77,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2003-09,406.44,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2003-10,292.05,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2003-10,412.23,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2003-11,274.3,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2003-11,419.22,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2004-02,283.91,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2004-02,433.44,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2004-03,277.71,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2004-03,439.94,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2004-04,297.89,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2004-04,450.2,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2004-06,327.58,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2004-06,465.09,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2004-07,313.19,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2004-07,478.57,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2004-08,293.24,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2004-08,475.73,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2004-10,319.16,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2004-10,486.95,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2004-11,308.33,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2004-11,491.91,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2004-12,306.8,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2004-12,517.28,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2005-01,328.41,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2005-01,502.38,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2005-03,332.74,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2005-03,516.39,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2005-04,335.49,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2005-04,523.27,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2005-05,322.55,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2005-05,529,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2005-07,343.99,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2005-07,550.68,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2005-08,332.59,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2005-08,544.43,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2005-09,333.86,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2005-09,550.3,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2005-11,343.81,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2005-11,558.86,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2005-12,346.46,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2005-12,582.66,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2006-01,363.29,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2006-01,564.32,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2006-02,352.95,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2006-02,568.57,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2006-04,362.64,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2006-04,586.56,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2006-05,373.6,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2006-05,588.75,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2006-06,396.53,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2006-06,598.25,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2006-08,388.91,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2006-08,603.87,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2006-09,376.99,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2006-09,607.7,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2006-10,380.55,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2006-10,613.28,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2006-12,381.97,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2006-12,647.08,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2007-02,386.04,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2007-02,623.25,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2007-03,391.96,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2007-03,632.72,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2007-04,393.9,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2007-04,641.72,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2007-06,420.82,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2007-06,652.72,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2007-07,436.51,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2007-07,660.09,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2007-08,412.56,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2007-08,657.09,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2007-10,484.06,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2007-10,661.95,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2007-11,497.78,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2007-11,665.61,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2008-01,553.18,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2008-01,671.31,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2008-03,625.03,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2008-03,681.91,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2008-04,596.07,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2008-04,690.56,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2008-05,590.57,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2008-05,692.89,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2008-07,646.89,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2008-07,707.89,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2008-08,687.58,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2008-08,704.79,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2008-09,892.47,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2008-09,705.36,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2008-10,974.56,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2008-10,749.1,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2008-11,973.71,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2008-11,752.89,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2008-12,1166.68,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2008-12,784.66,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2009-01,1013.1,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2009-01,761.91,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2009-02,959.25,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2009-02,763.77,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2009-03,969.84,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2009-03,768.88,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2009-04,911.46,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2009-04,781.03,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2009-05,907.33,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2009-05,783.45,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2009-06,1177.24,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2009-06,785.99,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2009-07,1019.96,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2009-07,795.07,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2009-08,981.93,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2009-08,790,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2009-09,1000.53,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2009-09,789.72,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2009-10,928.25,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2009-10,794.06,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2009-11,889.47,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2009-11,798.69,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2009-12,1070.45,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2009-12,829.28,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2010-01,1074.15,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2010-01,806.25,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2010-02,1104.61,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2010-02,807.05,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2010-03,1108.76,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2010-03,819.93,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2010-04,1163.66,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2010-04,821.11,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2010-05,1370.73,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2010-05,828.42,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2010-06,1472.21,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2010-06,835.36,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2010-07,1256.56,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2010-07,844.09,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2010-08,1240.23,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2010-08,837.47,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2010-09,1194.92,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2010-09,836.97,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2010-10,1181.5,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2010-10,838.72,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2010-11,1218.53,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2010-11,840.54,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2010-12,1318.1,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2010-12,863.72,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2011-01,1211.9,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2011-01,845.41,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2011-02,1220.71,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2011-02,844.37,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2011-03,1195.23,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2011-03,848.36,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2011-04,1179,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2011-04,858.75,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2011-05,1239.57,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2011-05,862.43,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2011-06,1236.33,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2011-06,871.56,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2011-07,1269.86,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2011-07,880.37,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2011-08,1538.44,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2011-08,874.48,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2011-09,1927.35,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2011-09,882.08,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2011-10,1991,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2011-10,889.2,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2011-11,2294.88,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2011-11,892.67,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2011-12,2533.09,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2011-12,913.63,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2012-02,2604.62,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2012-02,892.11,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2012-03,3074.35,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2012-03,894.8,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2012-04,3101.61,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2012-04,898.84,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2012-06,3272.16,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2012-06,918.92,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2012-07,3249.65,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2012-07,923.13,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2012-08,3310.5,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2012-08,921.77,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2012-10,3130.44,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2012-10,916.76,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2012-11,3003.95,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2012-11,915.09,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2012-12,2916.35,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2012-12,938.17,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2013-01,2617.04,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2013-01,907.95,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2013-03,2368.92,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2013-03,921.87,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2013-04,2371.77,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2013-04,927.1,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2013-05,2222.82,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2013-05,930.99,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2013-07,2116.3,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2013-07,944.28,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2013-08,2122.71,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2013-08,945.32,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2013-10,2004.22,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2013-10,950.36,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2013-11,1945.88,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2013-11,953.49,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2013-12,1901.88,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2013-12,982.43,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2014-01,1824.67,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2014-01,958.62,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2014-03,1735.69,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2014-03,965.59,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2014-04,1696.84,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2014-04,975.39,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2014-05,1643.84,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2014-05,980.32,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2014-07,1420.75,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2014-07,996.32,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2014-08,1465.01,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2014-08,998.14,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2014-09,1506.39,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2014-09,998.32,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2014-11,1462.5,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2014-11,1007.92,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2014-12,1620.07,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2014-12,1043.81,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2015-01,1567.99,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2015-01,1031.36,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2015-02,1581.52,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2015-02,1034.06,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2015-04,1801.82,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2015-04,1053.88,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2015-05,1829.52,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2015-05,1059.54,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2015-06,1940.34,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2015-06,1069.69,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2015-08,2159.75,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2015-08,1082.38,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2015-09,2147.56,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2015-09,1080.29,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2015-10,2182.98,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2015-10,1081.87,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2015-12,2364.66,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2015-12,1111.81,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2016-02,2540.2,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2016-02,1091.34,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2016-03,2521.12,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2016-03,1099.24,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2016-04,2674.09,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2016-04,1101.87,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2016-06,2811.55,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2016-06,1115.19,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2016-07,2886.73,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2016-07,1125.81,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2016-08,3014.43,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2016-08,1122.12,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2016-10,3211.19,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2016-10,1130.81,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2016-11,3336.93,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2016-11,1132.15,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2016-12,3339.68,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2016-12,1155.4,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2017-01,3464.44,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2017-01,1138.15,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2017-03,3905.91,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2017-03,1143.74,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2017-04,4011.17,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2017-04,1154.61,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2017-06,3997.34,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2017-06,1166.64,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2017-07,4110.66,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2017-07,1172.72,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2017-08,4169.84,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2017-08,1171.24,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2017-09,4138.72,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2017-09,1173.55,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2017-10,4244.53,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2017-10,1177.15,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2017-11,4351.89,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2017-11,1175.23,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2017-12,4246.24,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2017-12,1201.1,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2018-01,4412.76,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2018-01,1177.36,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2018-02,4457.05,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2018-02,1177.66,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2018-03,4361.27,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2018-03,1194.57,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2018-04,4499.03,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2018-04,1196.94,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2018-05,4584.04,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2018-05,1201.93,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2018-06,4488.06,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2018-06,1212.42,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2018-07,4509.85,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2018-07,1220.54,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2018-08,4499.35,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2018-08,1224.16,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2018-09,4501.51,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2018-09,1226.03,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2018-10,4468.76,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2018-10,1230.93,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2018-11,4493.83,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2018-11,1234.55,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2018-12,4357.94,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2018-12,1262.62,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2019-01,4407.67,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2019-01,1240.01,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2019-02,4402.32,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2019-02,1242.12,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2019-03,1247.5,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2019-03,4442.72,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2019-04,1260.74,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2019-04,4435.67,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2019-05,1262.78,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2019-05,4467.59,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2019-06,1271.09,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2019-06,4326.97,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2019-07,1282.2,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2019-07,4274.83,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2019-08,1282.89,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2019-08,4269.59,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2019-09,1284.96,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2019-09,4298.08,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2019-10,1290.83,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2019-10,4192.5,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2019-11,4239.62,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2019-11,1297.42,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2019-12,4209.9,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2019-12,1325.14,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2020-01,4142.55,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2020-01,1306.28,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2020-02,4142.93,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2020-02,1311.06,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2020-03,1346.95,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2020-03,4663.71,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2020-04,1366.62,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2020-04,4857.63,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2020-05,1385.93,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2020-05,4942.91,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2020-06,5671.7,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2020-06,1396.88,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2020-07,5786.27,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2020-07,1410.69,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2020-08,5836.59,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2020-08,1416.22,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2020-09,6147.69,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2020-09,1419.05,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2020-10,6181.82,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2020-10,1427.05,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2020-11,6297.34,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2020-11,1437.04,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2020-12,6447.23,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2020-12,1467.57,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2021-02,6530.28,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2021-02,1467.87,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2021-03,6900.08,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2021-03,1481.04,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2021-04,7042.96,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2021-04,1488.2,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2021-06,7315.72,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2021-06,1515.12,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2021-07,7291.32,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2021-07,1531.18,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2021-08,7321.69,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2021-08,1533.06,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2021-10,1546.8,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2021-10,7490.82,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2021-11,1552.91,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2021-11,7649.11,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2021-12,1578.08,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2021-12,7628.85,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2022-01,1573.32,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2022-01,7773.01,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2022-03,1608.37,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2022-03,7870.04,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2022-04,1621.57,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2022-04,7937.49,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2022-05,1628.3,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2022-05,8002.5,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2022-07,1635.64,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2022-07,7836.61,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2022-08,1610.83,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2022-08,8041.97,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2022-10,1598.17,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2022-10,8164.89,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2022-11,1593.33,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2022-11,7978.28,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2022-12,1607.22,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2022-12,7411.43,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2023-01,1593.5,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2023-01,7522.4,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2023-03,1592.07,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2023-03,7329.99,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2023-04,1599.12,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2023-04,7303.19,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2023-05,1599.85,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2023-05,7479.07,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2023-07,1605.31,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2023-07,6875.16,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2023-08,1598.67,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2023-08,6832.48,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2023-09,1593.83,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,P
+2023-09,6730.05,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,P
+1999-01,410.95,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+1999-01,344.09,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+1999-02,535.14,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+1999-02,342.68,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+1999-03,497.98,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+1999-03,348.55,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+1999-04,440.8,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+1999-04,349.87,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+1999-05,369.43,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+1999-05,353.25,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2016-01,2433.64,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2016-01,1090.73,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2016-05,2796.89,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2016-05,1105.83,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2016-09,3174.89,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2016-09,1125.23,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2017-02,3623.82,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2017-02,1140.13,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2017-05,4054.81,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2017-05,1155.67,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2021-01,6497.37,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2021-01,1460.52,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2021-05,7178.58,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2021-05,1503.26,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2021-09,7462.54,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2021-09,1538.5,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2022-02,1581.63,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2022-02,7861.61,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2022-06,1637.23,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2022-06,7919.75,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2022-09,1600.97,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2022-09,8206.65,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2023-02,1588.93,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2023-02,7452.18,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2023-06,1602.03,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2023-06,6876.07,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2003-04,233.18,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2003-04,378.73,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2003-08,270.32,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2003-08,404.12,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2003-12,285.82,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2003-12,450.52,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2004-01,287.65,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2004-01,430.03,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2004-05,285.82,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2004-05,459.28,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2004-09,306.33,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2004-09,480.63,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2005-02,345.91,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2005-02,504.94,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2005-06,338.48,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2005-06,540.85,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2005-10,349.74,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2005-10,554.66,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2006-03,344.98,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2006-03,574.69,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2006-07,406.11,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2006-07,607.71,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2006-11,371.39,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2006-11,617.16,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2007-01,366.34,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2007-01,621.25,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2007-05,413.87,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2007-05,644.95,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2007-09,440.33,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2007-09,657.28,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2007-12,698.55,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2007-12,697.12,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2008-02,578.68,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2008-02,674.71,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2008-06,658.4,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2008-06,699.74,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2012-01,2548.43,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2012-01,893.6,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2012-05,3203.77,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2012-05,908.14,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2012-09,3144.56,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2012-09,917.84,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2013-02,2548.06,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2013-02,905.37,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2013-06,2197.09,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2013-06,936.82,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2013-09,2093.78,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2013-09,944.56,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2014-02,1783.72,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2014-02,959.99,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2014-06,1501.39,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2014-06,986.1,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2014-10,1477.12,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2014-10,1002.15,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2015-03,1751.75,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2015-03,1043.58,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2015-07,2028.07,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2015-07,1084.84,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
+2015-11,2285.36,BSI.M.U2.N.C.L20.A.1.U2.1000.Z01.E,Liabilities - Total liabilities - Deposits of euro area residents - MFIs,EUR billions,A
+2015-11,1086.87,BSI.M.U2.N.C.L10.X.1.Z5.0000.Z01.E,Liabilities - Total liabilities - Currency in circulation,EUR billions,A
