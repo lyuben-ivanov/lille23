@@ -10,7 +10,8 @@ bb_gr_plot()
 plot object
 }
 \description{
-This function plots the government budget balance during the years of the Great Recession.
+This function plots the government budget balance (as a percentage of the respective GDP) for the USA and the Euro Area during the years of the Great Recession
+and compares it to the baseline scenario of the Great Depression.
 Since the Great Recession started at the end of 2007/beginning of 2008, the budget balance for the years 2008, 2009, and 2010 is plotted.
 }
 \examples{

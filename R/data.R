@@ -159,6 +159,12 @@
 #'
 #' Euro Area monetary base monthly data from the European Central Bank measured in millions of Euros. The data covers the period from Feb 1999 to Oct 2023.
 #'
+#' Base money consists of banknotes in circulation, the deposits that credit institutions are required to
+#' hold in their current accounts with the Eurosystem in order to cover the minimum reserve requirement
+#' (required central bank reserves) and credit institutions’ holdings of highly liquid deposits with the
+#' Eurosystem over and beyond the level of required central bank reserves (excess central bank reserves
+#'                                                                        and recourse to the deposit facility). [ECB Economic Bulletin, Issue 6/2017 - Boxes](https://www.ecb.europa.eu/pub/pdf/other/ebbox201706_07.en.pdf)
+#'
 #' @format ## `mb_ea`
 #' A tibble object with 261 observations of 2 variables:
 #' \describe{
