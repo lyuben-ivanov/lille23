@@ -1,6 +1,7 @@
 #' Plot government budget balance during the COVID-19 pandemic
 #'
-#' This function plots the government budget balance during the years of the COVID-19 pandemic.
+#' This function plots the government budget balance during the years of the COVID-19 pandemic for USA and the Euro Area
+#' and compares it to the baseline scenario of the Great Depression.
 #' Since the pandemic started at the beginning of 2022, the budget balance for the years 2020, 2021, and 2022 is plotted.
 #'
 #' @return plot object
@@ -36,7 +37,7 @@ bb_covid_plot <- function() {
 
   # add legend to barplot
   legend(
-    x = list(x = 9.2, y = -10),
+    x = list(x = 9.2, y = -12),
     legend = c("Baseline", "USA", "Euro Area"),
     fill = gray.colors(3),
     border = F,

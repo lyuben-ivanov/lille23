@@ -174,3 +174,35 @@
 #' @source <https://data.ecb.europa.eu/data/datasets/ILM/ILM.M.U2.C.LT00001.Z5.EUR>
 #' @references European Central Bank, Frankfurt am Main, Germany. Base money, Euro area (changing composition), Monthly. https://data.ecb.europa.eu/data/datasets/ILM/ILM.M.U2.C.LT00001.Z5.EUR, November 2, 2023.
 "mb_ea"
+
+#' US employment
+#'
+#' US employment annual data from the NBER and from OECD, measured in thousands of persons.
+#' The data covers the period from year 1927 to year 1943 (Source: NBER) and from year 1960 to year 2022 (Source: OECD) since it is taken from different sources (please visit the links below for more information).
+#'
+#'
+#' @format ## `emp_us`
+#' A tibble object with 80 observations of 2 variables:
+#' \describe{
+#'   \item{date}{a numeric indicating the year of the observation}
+#'   \item{value}{a numeric indicating the employed population in USA for the respective year (in thousands of persons)}
+#' }
+#' @source <https://fred.stlouisfed.org/series/A0871BUSA175NNBR#>
+#' @source <https://fred.stlouisfed.org/series/LFEMTTTTUSA647S>
+#' @references National Bureau of Economic Research, Total Employment for United States \[A0871BUSA175NNBR\], retrieved from FRED, Federal Reserve Bank of St. Louis; https://fred.stlouisfed.org/series/A0871BUSA175NNBR, November 23, 2023.
+#' @references Organization for Economic Co-operation and Development, Employed Population: Aged 15 and over: All Persons for United States \[LFEMTTTTUSA647S\], retrieved from FRED, Federal Reserve Bank of St. Louis; https://fred.stlouisfed.org/series/LFEMTTTTUSA647S, November 23, 2023.
+"emp_us"
+
+#' Euro Area employment
+#'
+#' Euro Area employment annual data from OECD, measured in thousands of persons. The data covers the period from 1998 to 2022.
+#'
+#' @format ## `emp_ea`
+#' A tibble object with 25 observations of 2 variables:
+#' \describe{
+#'  \item{date}{a numeric indicating the year of the observation}
+#'  \item{value}{a numeric indicating the employed population in Euro Area for the respective year (in thousands of persons)}
+#'  }
+#'  @source <https://fred.stlouisfed.org/series/LFEMTTTTEZA647S>
+#'  @references Organization for Economic Co-operation and Development, Employed Population: Aged 15 and over: All Persons for Euro Area (19 Countries) \[LFEMTTTTEZA647S\], retrieved from FRED, Federal Reserve Bank of St. Louis; https://fred.stlouisfed.org/series/LFEMTTTTEZA647S, November 23, 2023.
+"emp_ea"
