@@ -3,6 +3,7 @@
 export(bb_covid_plot)
 export(bb_gr_plot)
 export(bp)
+export(emp_gr_plot)
 export(indpro_baseline_plot)
 export(indpro_covid_plot)
 export(indpro_gr_plot)
