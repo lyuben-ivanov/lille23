@@ -30,7 +30,8 @@ bp <- function (                        # add barplot function
 
   par(mar =                           # set margins around plot
         mar_values,                   # (bottom, left, top, right)
-      cex = 0.9                       # plotting text expansion
+      cex = 0.8,                       # plotting text expansion
+      cex.axis = 0.8                   # axis text expansion
   )
 
   data.frame(                     # data frame for barplot
@@ -74,7 +75,7 @@ bp <- function (                        # add barplot function
       ) |>
         paste0("\\%"),                          # add LaTeX code for %
       las = 2,                        	      	# horizontal labels
-      tick = F				                          # remove ticks
+      tick = FALSE				                      # remove ticks
     )
 
   }

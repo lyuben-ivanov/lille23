@@ -60,21 +60,11 @@ mb_gr_plot <- function() {
     bar_1_data = mb_us_change_1930_1932,
     bar_2_data = mb_us_change_2008_2010,
     bar_3_data = mb_ea_change_2008_2010,
-    y_ticks = 2,
+    y_ticks = 5,
     y_axis = TRUE,
-    y_lim = c(-2, 6),
-    mar_values = c(3, 4, 2, 1),
+    y_lim = c(-5, 16),
+    mar_values = c(3.5, 3, 2, 1),
     names.arg = c("t+1", "t+2", "t+3")
-  )
-
-  # add legend to barplot
-  legend(
-    x = list(x = 9.2, y = 5),
-    legend = c("Baseline", "USA", "Euro Area"),
-    fill = gray.colors(3),
-    border = F,
-    bty = "n",
-    cex = 1.25
   )
 
 }

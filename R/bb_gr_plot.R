@@ -30,19 +30,9 @@ bb_gr_plot <- function() {
     bar_3_data = bar_3,
     y_ticks = 5,
     y_axis = TRUE,
-    y_lim = c(-10, 1),
-    mar_values = c(3, 4, 2, 1),
+    y_lim = c(-15, 1),
+    mar_values = c(3.5, 3, 2, 1),
     names.arg = c("t+1", "t+2", "t+3")
-  )
-
-  # add legend to barplot
-  legend(
-    x = list(x = 0.6, y = -6),
-    legend = c("Baseline", "USA", "Euro Area"),
-    fill = gray.colors(3),
-    border = F,
-    bty = "n",
-    cex = 1.25
   )
 
 }

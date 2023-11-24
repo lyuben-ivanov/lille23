@@ -29,19 +29,22 @@ bb_covid_plot <- function() {
     bar_2_data = bar_2,
     bar_3_data = bar_3,
     y_ticks = 5,
-    y_axis = TRUE,
+    y_axis = FALSE,
     y_lim = c(-15, 1),
-    mar_values = c(3, 4, 2, 1),
+    mar_values = c(3.5, 3, 2, 1),
     names.arg = c("t", "t+1", "t+2")
   )
 
   # add legend to barplot
+
   legend(
-    x = list(x = 9.2, y = -12),
-    legend = c("Baseline", "USA", "Euro Area"),
+    x = list(x = 5, y = -17.5),
+    legend = c("GD", "US", "EA"),
     fill = gray.colors(3),
-    border = F,
+    border = FALSE,
     bty = "n",
-    cex = 1.25
+    cex = 0.8,
+    ncol = 3,
+    xpd = TRUE
   )
 }
