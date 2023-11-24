@@ -9,11 +9,11 @@
 #' @examples
 #'
 #' stocks_gr_plot()
-stocks_gr_plot <- function() {
+stocks_gr_plot <- function(max_value = 50) {
 
   # plot baseline scenario
 
-  stocks_baseline_plot()
+  stocks_baseline_plot(max_value = 50)
 
   # add stocks data for USA
 
@@ -27,9 +27,9 @@ stocks_gr_plot <- function() {
 
   # add label
 
-  mtext(text = "USA", side = 4, at = -30.45, las = 2, line = -0.33)
+  mtext(text = "US", side = 4, at = -30.45, las = 2, line = -0.33, cex = 0.65, xpd = TRUE)
 
-  # add stocks data for the Euro Area
+  # add stocks data for the Euro Area 19
 
   stocks_ea |>
     dplyr::mutate(date = as.Date(date)) |>
@@ -41,6 +41,6 @@ stocks_gr_plot <- function() {
 
   # add label
 
-  mtext(text = "EA19", side = 4, at = -40.26, las = 2, line = -0.33)
+  mtext(text = "EA", side = 4, at = -40.26, las = 2, line = -0.33, cex = 0.65, xpd = TRUE)
 
 }

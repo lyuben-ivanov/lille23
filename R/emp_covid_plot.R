@@ -40,21 +40,23 @@ emp_covid_plot <- function() {
     bar_2_data = emp_us_2020_2022,
     bar_3_data = emp_ea_2020_2022,
     y_ticks = 5,
-    y_axis = TRUE,
+    y_axis = FALSE,
     y_lim = c(-20, 5),
-    mar_values = c(3, 4, 2, 1),
+    mar_values = c(3.5, 3, 2, 1),
     names.arg = c("t", "t+1", "t+2")
   )
 
   # add legend to barplot
 
   legend(
-    x = list(x = 0.6, y = -15),
-    legend = c("Baseline", "USA", "Euro Area"),
+    x = list(x = 5, y = -24.1),
+    legend = c("GD", "US", "EA"),
     fill = gray.colors(3),
     border = FALSE,
     bty = "n",
-    cex = 1.25
+    cex = 0.8,
+    ncol = 3,
+    xpd = TRUE
   )
 
 }

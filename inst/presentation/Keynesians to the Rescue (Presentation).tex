@@ -1,4 +1,7 @@
-\input{preamble}
+\documentclass{beamer}
+\usetheme{metropolis}
+\usepackage{tikz}
+\usepackage[none]{hyphenat}
 
 \title{Keynesians to the Rescue: Unprecedented Policy Responses Towards Unprecedented Macroeconomic Shocks (Evidence from Three Natural Experiments)}
 \subtitle{Lille Post-Keynesian Conference 
@@ -10,8 +13,6 @@
 \begin{document}
 
 \maketitle
-
-\section{Introduction}
 
 \section{Fiscal and Monetary Responses to Three Major Macroeconomic Shocks}
 
@@ -36,49 +37,48 @@
 
 \section{Macroeconomic Outcomes}
 
+\begin{frame}{Industrial Production Post GFC and COVID-19 Pandemic}
 
-%\begin{frame}{Going Beyond Econometrics and Operations Research}
-%	\begin{itemize}
-%		\item [] Humberto Barreto (2009) Intermediate Microeconomics with Microsoft Excel, \textit{Cambridge University Press}, ISBN: 9780521899024	
-%		\item []
-%		\item [] Humberto Barreto (2020) Intermediate Microeconomics with Microsoft Excel, 2$^{nd}$ ed, \textit{freely available}	
-%		\item []
-%		\item []  Roger B. Myerson \& Eduardo Zambrano (2019) Probability Models for Economic Decisions, \textit{Penguin Random House}, ISBN: 9780262043120
-%	\end{itemize}
-%\end{frame}
-%
-%
-%\section{The R Way}
-%
-%\begin{frame}{Why R?}
-%\begin{itemize}
-%	\item [] Free to download on any operating system;
-%	\item [] 
-%	\item [] Widely used in academic research and in the corporate world
-%	\item []
-%	\item [] R Notebooks, espouse the principles of literate programming, free to create and open (with RStudio)
-%	\item []
-%	\item [] R Notebooks very suitable for \textbf{both} reproducible research \textbf{and} reproducible teaching 
-%	\item [] 
-%	\item [] Flexible -- functions are \textbf{both} ``black-box" \textbf{and} open source 
-%\end{itemize}
-%	
-%\end{frame}
+\begin{figure}[h!]
+     \centering
+     \input{industrial_production.tex}
+\end{figure} 
+	
+\end{frame}
 
+\begin{frame}{Employment Post GFC and COVID-19 Pandemic}
 
-\begin{frame}{Data and Code for Research Reproduction }
+\begin{figure}[h!]
+     \centering
+     \input{employment.tex}
+\end{figure} 
+	
+\end{frame}
 
+\begin{frame}{Stock Markets Post GFC and COVID-19 Pandemic}
 
-GitHub repository
+\begin{figure}[h!]
+     \centering
+     \input{stock_markets.tex}
+\end{figure} 
+	
+\end{frame}
+
+\section{Resources}
+
+\begin{frame}{Data and Code for Research Reproducibility}
+
+GitHub repository: 
 
 \quad \quad \textit{https://github.com/lyuben-ivanov/lille23}
 
-Installation of the package \texttt{lille23} directly in \texttt{R}
+\vfill
 
-\quad \quad \textit{devtools::install\_github("lyuben-ivanov/lille23")}
+\texttt{R} installation of package \texttt{lille23}:
+
+\quad \quad \textit{devtools::install\_github(``lyuben-ivanov/lille23")}
 
 \end{frame}
-
 
 
 

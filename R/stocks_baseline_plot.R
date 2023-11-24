@@ -10,9 +10,11 @@
 #'
 #' @examples
 #' stocks_baseline_plot()
-stocks_baseline_plot <- function (max_value = 0) {
+stocks_baseline_plot <- function (max_value = 0, y_axis = TRUE) {
 
-  # convert indpro_us to percentage change compared to base and initiate plot
+  par(cex = 0.8, cex.axis = 0.8, mar = c(2, 3, 2, 1))
+
+  # convert stocks_us to percentage change compared to base and initiate plot
   stocks_us |>
     dplyr::mutate(date = as.Date(date)) |>
     dplyr::filter(date >= as.Date("1929-09-01"), date <= as.Date("1932-06-30")) |>
@@ -37,18 +39,22 @@ stocks_baseline_plot <- function (max_value = 0) {
     labels = c("t + 2", "t + 34")
   )
 
-  # add y-axis
+  if (y_axis == TRUE) {
+
+    # add y-axis
 
   axis(
     side = 2,
-    at = seq(from = max_value, to = -90, by = -10),
-    labels = seq(from = max_value, to = -90, by = -10) |> paste0("\\%"),
+    at = seq(from = max_value, to = -90, by = -20),
+    labels = seq(from = max_value, to = -90, by = -20) |> paste0("\\%"),
     las = 2,
     tick = F
   )
 
+  }
+
   # add label
 
-  mtext(text = "Base", side = 4, at = -84.65, las = 2, line = -0.33)
+  mtext(text = "GD", side = 4, at = -84.65, las = 2, line = -0.33, cex = 0.65, xpd = TRUE)
 
 }

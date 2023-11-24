@@ -13,7 +13,7 @@ indpro_covid_plot <- function() {
 
   # plot baseline scenario
 
-  indpro_baseline_plot(max_value = 10)
+  indpro_baseline_plot(max_value = 10, y_axis = FALSE)
 
   # add industrial production data for USA
 
@@ -27,9 +27,9 @@ indpro_covid_plot <- function() {
 
   # add label
 
-  mtext(text = "USA", side = 4, at = 1, las = 2, line = -0.33)
+  mtext(text = "US", side = 4, at = 1, las = 2, line = -0.33, cex = 0.65, xpd = TRUE)
 
-  # add industrial production data for the Euro Area
+  # add industrial production data for the Euro Area 19
 
   indpro_ea |>
     dplyr::mutate(date = as.Date(date)) |>
@@ -41,5 +41,5 @@ indpro_covid_plot <- function() {
 
   # add label
 
-  mtext(text = "EA19", side = 4, at = 5, las = 2, line = -0.33)
+  mtext(text = "EA", side = 4, at = 5, las = 2, line = -0.33, cex = 0.65, xpd = TRUE)
 }

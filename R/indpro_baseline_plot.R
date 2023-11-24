@@ -10,7 +10,9 @@
 #'
 #' @examples
 #' indpro_baseline_plot()
-indpro_baseline_plot <- function (max_value = 0) {
+indpro_baseline_plot <- function (max_value = 0, y_axis = TRUE) {
+
+  par(cex = 0.8, cex.axis = 0.8, mar = c(2, 3, 2, 1))
 
 # convert indpro_us to percentage change compared to base and initiate plot
   indpro_us |>
@@ -37,18 +39,22 @@ indpro_baseline_plot <- function (max_value = 0) {
     labels = c("t", "t + 36")
   )
 
-# add y-axis
+  if (y_axis == TRUE) {
 
-  axis(
-    side = 2,
-    at = seq(from = 10, to = -50,by = -10),
-    labels = seq(from = 10, to = -50, by = -10) |> paste0("\\%"),
-    las = 2,
-    tick = F
-  )
+    # add y-axis
+
+    axis(
+      side = 2,
+      at = seq(from = 10, to = -50, by = -10),
+      labels = seq(from = 10, to = -50, by = -10) |> paste0("\\%"),
+      las = 2,
+      tick = F
+    )
+
+  }
 
 # add label
 
-  mtext(text = "Base", side = 4, at = -53.56, las = 2, line = -0.33)
+  mtext(text = "GD", side = 4, at = -53.56, las = 2, line = -0.33, cex = 0.65, xpd = TRUE)
 
 }

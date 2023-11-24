@@ -42,19 +42,8 @@ emp_gr_plot <- function() {
     y_ticks = 5,
     y_axis = TRUE,
     y_lim = c(-20, 5),
-    mar_values = c(3, 4, 2, 1),
+    mar_values = c(3.5, 3, 2, 1),
     names.arg = c("t+1", "t+2", "t+3")
-  )
-
-  # add legend to barplot
-
-  legend(
-    x = list(x = 0.6, y = -15),
-    legend = c("Baseline", "USA", "Euro Area"),
-    fill = gray.colors(3),
-    border = FALSE,
-    bty = "n",
-    cex = 1.25
   )
 
 }

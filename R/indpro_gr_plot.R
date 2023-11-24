@@ -13,7 +13,7 @@
 
   # plot baseline scenario
 
-  indpro_baseline_plot()
+  indpro_baseline_plot(max_value = 10)
 
   # add great recession data for the USA
 
@@ -27,9 +27,9 @@
 
   # add label
 
-  mtext(text = "USA", side = 4, at = -8.5 - 1.5, las = 2, line = -0.33)
+  mtext(text = "US", side = 4, at = -8.5 - 1.5, las = 2, line = -0.33, cex = 0.65, xpd = TRUE)
 
-  # add great recession data for the Euro Area
+  # add great recession data for the Euro Area 19
 
   indpro_ea |>
     dplyr::filter(date >= as.Date("2007-12-01"), date <= as.Date("2010-12-01")) |>
@@ -40,7 +40,7 @@
 
   # add label
 
-  mtext(text = "EA19", side = 4, at = -8.3 + 1.5, las = 2, line = -0.33)
+  mtext(text = "EA", side = 4, at = -8.3 + 1.5, las = 2, line = -0.33, cex = 0.65, xpd = TRUE)
 
 }
 

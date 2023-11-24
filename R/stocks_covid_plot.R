@@ -2,7 +2,7 @@ stocks_covid_plot <- function() {
 
   # add baseline data
 
-  stocks_baseline_plot(max_value = 50)
+  stocks_baseline_plot(max_value = 50, y_axis = FALSE)
 
   # add stock market data for USA
 
@@ -16,9 +16,9 @@ stocks_covid_plot <- function() {
 
   # add label
 
-  mtext(text = "USA", side = 4, at = 24.46, las = 2, line = -0.33)
+  mtext(text = "US", side = 4, at = 24.46, las = 2, line = -0.33, cex = 0.65, xpd = TRUE)
 
-  # add stock market data for the Euro Area
+  # add stock market data for Euro Area 19
 
   stocks_ea |>
     dplyr::mutate(date = as.Date(date)) |>
@@ -30,6 +30,6 @@ stocks_covid_plot <- function() {
 
   # add label
 
-  mtext(text = "EA19", side = 4, at = 1.74, las = 2, line = -0.33)
+  mtext(text = "EA", side = 4, at = 1.74, las = 2, line = -0.33, cex = 0.65, xpd = TRUE)
 
 }

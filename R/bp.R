@@ -24,7 +24,7 @@ bp <- function (                        # add barplot function
   y_ticks = 1,                          # require tick distance for y-axis
   y_axis = TRUE,                        # ask for y-axis
   y_lim = c(-100, 100),                 # set default value of y-axis limits
-  mar_values = c(3, 4, 2, 1) ,          # set default value of margins
+  mar_values = c(3, 4, 2, 1),           # set default value of margins
   names.arg = c("t+1", "t+2", "t+3")    # set default value of labels
 ) {
 
