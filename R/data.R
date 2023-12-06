@@ -206,3 +206,16 @@
 #'  @source <https://fred.stlouisfed.org/series/LFEMTTTTEZA647S>
 #'  @references Organization for Economic Co-operation and Development, Employed Population: Aged 15 and over: All Persons for Euro Area (19 Countries) \[LFEMTTTTEZA647S\], retrieved from FRED, Federal Reserve Bank of St. Louis; https://fred.stlouisfed.org/series/LFEMTTTTEZA647S, November 23, 2023.
 "emp_ea"
+
+#' Bitcoin price data
+#'
+#' Bitcoin daily price data from Yahoo Finance! measured in US dollars. The data covers the period from 2014-09-17 to 2023-12-06.
+#'
+#' @format ## `bitcoin`
+#' A tibble object with 3368 observations of 2 variables:
+#' \describe{
+#'  \item{date}{a date indicating the date of the observation}
+#'  \item{value}{a numeric indicating the price of Bitcoin for the respective date (in US dollars)}
+#'  }
+#'  @source <https://finance.yahoo.com/quote/BTC-USD/history?p=BTC-USD>
+"bitcoin"

@@ -161,4 +161,15 @@ print_presentation_figures <- function() {
 
   dev.off()
 
+  # print figure with the bitcoin price for the 2014-2023 period
+
+  tikzDevice::tikz(                                # start tikzDevice
+    file = p_path("bitcoin_price.tex"),    # output path and file name
+    width = 4.5, height = 2.5                      # figure size
+  )
+
+  bitcoin_price_plot()
+
+  dev.off()
+
 }
