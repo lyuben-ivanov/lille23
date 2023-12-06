@@ -69,6 +69,17 @@ print_presentation_figures <- function() {
 
   dev.off()
 
+  # print figure with the monetary policy during the Great Recession and the COVID-19 pandemic
+
+  tikzDevice::tikz(                                # start tikzDevice
+    file = p_path("monetary_policy_covid.tex"),    # output path and file name
+    width = 4.5, height = 2.5                      # figure size
+  )
+
+  mb_covid_plot_monthly()
+
+  dev.off()
+
   # print figure with the industrial policy during the Great Recession and the COVID-19 pandemic
 
   tikzDevice::tikz(                                # start tikzDevice

@@ -4,7 +4,7 @@
 \alias{stocks_gr_plot}
 \title{Stocks during the Great Recession plot}
 \usage{
-stocks_gr_plot()
+stocks_gr_plot(max_value = 50)
 }
 \value{
 plot object
