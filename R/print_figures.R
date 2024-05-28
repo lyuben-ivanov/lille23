@@ -80,7 +80,7 @@ print_presentation_figures <- function() {
 
   dev.off()
 
-  # print figure with the industrial policy during the Great Recession and the COVID-19 pandemic
+  # print figure with the industrial output during the Great Recession and the COVID-19 pandemic
 
   tikzDevice::tikz(                                # start tikzDevice
     file = p_path("industrial_production.tex"),    # output path and file name
